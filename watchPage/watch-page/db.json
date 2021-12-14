@@ -3,8 +3,11 @@
 {
   "data":{
       "premium":true,
-      "title":"./media/title_logo_p.svg",
-      "metaData":"./media/metadata.svg",
-      "description" : " A love story between Jaya Krishna and Deepti, set in the late 1990s, comes alive in this periodic drama"
+      "title":"https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/title_logo_p.svg",
+      "metaData":"https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/metadata.svg",
+      "description" : " A love story between Jaya Krishna and Deepti, set in the late 1990s, comes alive in this periodic drama",
+      "main_bg":"https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/main_div_watch_1.svg",
+      "tags":"https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/tags.svg",
+      "play":"https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/Startwatcing.svg"
   }
 }

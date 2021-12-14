@@ -6,7 +6,6 @@ height: 480px;
 left: 0px;
 top: 0px;
 
-background: url(../media/main_div_watch_1.svg);
 }
 .info_cont_p{
     position: absolute;
@@ -96,7 +95,7 @@ order: 0;
 flex-grow: 0;
 margin: 18px 100px;
 margin-top: 124px;
-background: url(../media/tags.svg);
+
 }
 
 .age_tag_p{
