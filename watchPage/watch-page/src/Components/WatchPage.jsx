@@ -1,58 +1,43 @@
-
-import "./WatchPage.css";
-import {useState,useEffect} from "react"
-import axios from "axios"
-
+import axios from "axios";
+import { useEffect, useState } from "react/cjs/react.development"
+import { MainCont } from "./Watchpage_show_info_title"
+import "./WatchPge.css"
 export const WatchPage =()=>{
-    
-    const [data,setdata] = useState([]);
-    const data_getting =async ()=>{
+   const [cast,setCast] = useState([]);
+   const getCast = async()=>{
         const {data} = await axios.get("http://localhost:3001/data");
-        console.log(data)
-        setdata(data)
-    }
-    useEffect(()=>{
-       data_getting()
-        
-     },[])
-     const main_bg = data.main_bg;
+        //console.log(data.cast);
+        setCast(data.cast)
+   }
+   useEffect(()=>{
+        getCast()
+   },[])
    
     return (
-        <>
-            <div className="main_div_p" style={{backgroungImage:"colorphoto poster without logo final.png"}}>
-                <div className="info_cont_p">
-                <div>
-                    {data.premium&&   <div className="tag_div_p">
-                        <img  src={data.tags} alt="tags" /></div>}
-             
-                <div className="title_p"  >
-                <img src={data.title} alt="metaData"/>
-                </div>
-                <div className="metaData_p">
-                    <img src={data.metaData} alt="metaData"/>
-                </div>
-                <div className="description_title_p">
-               {data.description}
-                </div>
-                <div className="button_box_1P">
-                    <button className="triler_button_p" onClick={()=>{console.log("clicked")}}>
-                        Play Trailer
-                    </button>
-                    <button className="strt_p"  >
-                    
-                    </button>
-                </div>
-                </div>
-
-
-                </div>
-                
-               
-               
-            </div>
+        <div>
+            <MainCont />   
+         
+           
         
-        
-        </>
+             <div className="details_main_div_p">
+                    <div className="cast_details_div_p">
+                         <button className="cast_movie_p">Cast</button>
+                         <button className="details_movie_p">Details</button>
+                        
+                    </div>
+                    <div className="divider_p"></div>
+                    <div className="cast_image_p">
+                            {cast.map((el,i)=>{
+                                return <div className="cast_tile_p" key={i}>
+                                        <img className="img" src = {el.pic} alt="pic" />
+                                        <p className="cast_name_p">
+                                            {el.name}
+                                        </p>
+                                </div>
+                            })}
+                    </div>
+             </div>
+        </div>
     )
 }
 
