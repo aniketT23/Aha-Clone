@@ -373,3 +373,20 @@ order: 1;
 flex-grow: 0;
 margin: 0px 24px;
 }
+
+.delete_watchlist_button_p{
+    position: static;
+width: 42px;
+height: 42px;
+left: 0px;
+top: 0px;
+
+
+/* Inside Auto Layout */
+border: none;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 28px;
+background: url(../media/delete_watchlist.svg);
+}

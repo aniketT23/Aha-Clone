@@ -1,0 +1,113 @@
+.similar_main_div_p{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 1534px;
+height: 143px;
+left: 22px;
+top: 705px;
+}
+
+.similar_text_p{
+    position: static;
+width: 146px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+/* H3 */
+
+font-family: Proxima Nova;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* text/day */
+
+color: #FFFFFF;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 16px 0px;
+}
+.similarity_movie_tile{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 134px;
+height: 103px;
+left: 0px;
+top: 0px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 6px;
+}
+.similarity_movie_tile>img{
+    position: static;
+width: 134px;
+height: 76px;
+left: 0px;
+top: 0px;
+
+background: url(0-16x9.jpg);
+border-radius: 8px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+}
+.similarity_movie_tile>p{
+    position: static;
+width: 134px;
+height: 16px;
+left: 0px;
+top: 84px;
+
+/* Body */
+
+font-family: Proxima Nova;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* text/day */
+
+color: #FFFFFF;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 8px 0px;
+}

@@ -9,8 +9,8 @@
       "main_bg": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/aee023eb0f5f4503eb11737ad0dda99e5862da69/watchPage/watch-page/src/media/main_div_watch_1.svg",
       "tags": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/tags.svg",
       "play": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/Startwatcing.svg",
-      "watchlist_tile" :"",
-      "name" : "",
+      "watchlist_tile": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/ca3237588afaca2d315ed66e2e1777e1c6992585/watchPage/watch-page/src/media/watchlist_show1.svg",
+      "tile_name": "Shit happens",
       "cast": [
         {
           "name": "Suhas Pogalu",
@@ -31,42 +31,14 @@
         {
           "name": "Suhas Pogalu",
           "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr38wQMij1VgwvbYxeURkehPjY3XQWaxGhSw1ELRJ5HnXrEg-WTQ1JBaz5SclWDBqwh6I&usqp=CAU"
+        }
+      ],
+      "Similar" :[
+        {
+          
         }
       ]
     }
   ],
-  "watchList": [
-    {
-      "id": 1,
-      "premium": true,
-      "title": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/title_logo_p.svg",
-      "metaData": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/metadata.svg",
-      "description": " A love story between Jaya Krishna and Deepti, set in the late 1990s, comes alive in this periodic drama",
-      "main_bg": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/aee023eb0f5f4503eb11737ad0dda99e5862da69/watchPage/watch-page/src/media/main_div_watch_1.svg",
-      "tags": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/tags.svg",
-      "play": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/Startwatcing.svg",
-      "cast": [
-        {
-          "name": "Suhas Pogalu",
-          "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr38wQMij1VgwvbYxeURkehPjY3XQWaxGhSw1ELRJ5HnXrEg-WTQ1JBaz5SclWDBqwh6I&usqp=CAU"
-        },
-        {
-          "name": "Suhas Pogalu",
-          "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr38wQMij1VgwvbYxeURkehPjY3XQWaxGhSw1ELRJ5HnXrEg-WTQ1JBaz5SclWDBqwh6I&usqp=CAU"
-        },
-        {
-          "name": "Suhas Pogalu",
-          "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr38wQMij1VgwvbYxeURkehPjY3XQWaxGhSw1ELRJ5HnXrEg-WTQ1JBaz5SclWDBqwh6I&usqp=CAU"
-        },
-        {
-          "name": "Suhas Pogalu",
-          "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr38wQMij1VgwvbYxeURkehPjY3XQWaxGhSw1ELRJ5HnXrEg-WTQ1JBaz5SclWDBqwh6I&usqp=CAU"
-        },
-        {
-          "name": "Suhas Pogalu",
-          "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr38wQMij1VgwvbYxeURkehPjY3XQWaxGhSw1ELRJ5HnXrEg-WTQ1JBaz5SclWDBqwh6I&usqp=CAU"
-        }
-      ]
-    }
-  ]
+  "watchList": []
 }
