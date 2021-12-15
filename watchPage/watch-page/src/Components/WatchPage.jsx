@@ -5,7 +5,7 @@ import "./WatchPge.css"
 export const WatchPage =()=>{
    const [cast,setCast] = useState([]);
    const getCast = async()=>{
-        const {data} = await axios.get("http://localhost:3001/data");
+        const {data} = await axios.get("http://localhost:3001/data/1");
         //console.log(data.cast);
         setCast(data.cast)
    }

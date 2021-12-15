@@ -1,0 +1,129 @@
+
+.main_bg_p{
+    background: #222124;
+    position: relative;
+    width: 100%;
+    height: 900px;
+}
+
+.watchlist_button_div_p{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 170px;
+height: 39px;
+left: 40px;
+top: 100px;
+
+}
+.back_button_p{
+    position: static;
+width: 24px;
+height: 24px;
+left: 0px;
+top: 7.5px;
+
+
+/* Inside Auto Layout */
+border: none;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 12px;
+background: url(../media/back_button_p.svg);
+}
+
+.watch_text_p{
+    position: static;
+width: 134px;
+height: 39px;
+left: 36px;
+top: 0px;
+
+/* H2 */
+
+font-family: Proxima Nova;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 12px;
+}
+
+.watchlist_tile_p{
+    /* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 212px;
+height: 147px;
+left: 40px;
+top: 163px;
+
+}
+.watchlist_tile_p>img{
+    position: static;
+width: 212px;
+height: 120px;
+left: 0px;
+top: 0px;
+
+
+border-radius: 8px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+}
+.watchlist_tile_p>p{
+    position: static;
+width: 96px;
+height: 19px;
+left: 0px;
+top: 128px;
+
+/* Body */
+
+font-family: Proxima Nova;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+
+/* text/day */
+
+color: #FFFFFF;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 8px 0px;
+}
