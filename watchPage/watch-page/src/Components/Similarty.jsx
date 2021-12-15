@@ -1,7 +1,7 @@
 import "./Similarity.css"
 import axios from "axios";
 import {useState,useEffect} from "react"
-function Similarity({id}){
+function Similarity({id,castCheck}){
     const [data,SetData] = useState([]);
 
     const data_getting =async ()=>{
@@ -23,13 +23,13 @@ function Similarity({id}){
 
     return(
         <div>
-            <div className="similar_main_div_p">
+            <div className={castCheck==true?"similar_main_div_p":"similar_main_div2_p"}>
                 <p className="similar_text_p">Similar to this</p>
                 <div style={{display:"flex"}}>
                 {data.map((el,i)=>{
                     return <div key={i} className="similarity_movie_tile">
                         <img src={el.image} alt="similarity_image" />
-                        <p>{el.name}</p>
+                        <p>{el.name}!</p>
                     </div>
                 })}
                 </div>

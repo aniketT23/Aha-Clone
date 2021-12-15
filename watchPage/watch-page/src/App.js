@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Cast from './Components/Cast';
 import { Dummy } from './Components/DummyIframe';
+import { Episodes } from './Components/Episodes';
 import { WatchList } from './Components/WatchListPage';
 import { WatchPage } from './Components/WatchPage';
 
@@ -27,7 +28,7 @@ function App() {
           <Cast />
         </Route>
         <Route path="/episodes">
-          <Cast />
+        <Episodes id={1}/>
         </Route>
         </Switch>
         

@@ -4,13 +4,24 @@ flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 
-position: absolute;
+ position: absolute;
 width: 85%;
 height: 143px;
 left: 3%;
 top: 20%;
 }
+.similar_main_div2_p{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
 
+ position: absolute;
+width: 85%;
+height: 143px;
+left: 3%;
+top: 63%;
+}
 .similar_text_p{
     position: static;
 width: 146px;
