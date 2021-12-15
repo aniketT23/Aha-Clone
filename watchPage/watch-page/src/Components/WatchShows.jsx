@@ -4,12 +4,12 @@ import PopularShows from "./Episodes";
 import Similarity from "./Similarty";
 import { MainCont } from "./Watchpage_show_info_title"
 import "./WatchPge.css"
-export const WatchPage =({id})=>{
+export const WatchShows =()=>{
 
    
     return (
         <div>
-            <MainCont d_id={1}/>   
+            <MainCont />   
          
            
         
@@ -20,9 +20,9 @@ export const WatchPage =({id})=>{
                         
                     </div>
                     <div className="divider_p"></div>
-                    <Cast />
-                    <Similarity />
-                    <PopularShows />
+                    <Cast  id={1}/>
+                    <Similarity id={1}/>
+                    <PopularShows id={1}/>
                    
              </div>
         </div>

@@ -3,10 +3,10 @@ import { useEffect, useState } from "react/cjs/react.development"
 
 import "./WatchPge.css"
 
-function Cast (){
+function Cast ({id}){
     const [cast,setCast] = useState([]);
     const getCast = async()=>{
-         const {data} = await axios.get("http://localhost:3001/data/1");
+         const {data} = await axios.get(`http://localhost:3001/data/${id}`);
          //console.log(data.cast);
          setCast(data.cast)
     }

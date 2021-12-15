@@ -5,10 +5,10 @@ align-items: flex-start;
 padding: 0px;
 
 position: absolute;
-width: 1534px;
+width: 85%;
 height: 143px;
-left: 22px;
-top: 705px;
+left: 3%;
+top: 20%;
 }
 
 .similar_text_p{
@@ -69,7 +69,7 @@ height: 76px;
 left: 0px;
 top: 0px;
 
-background: url(0-16x9.jpg);
+
 border-radius: 8px;
 
 /* Inside Auto Layout */

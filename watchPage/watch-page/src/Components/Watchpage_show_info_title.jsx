@@ -6,7 +6,7 @@ import axios from "axios"
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 
-export const MainCont =()=>{
+export const MainCont =({d_id})=>{
      const history  = useHistory()
     const [data,setdata] = useState([]);
     const [watchListed,setWatchListed] = useState(null);
@@ -15,7 +15,7 @@ export const MainCont =()=>{
       
         try{
            
-            const {data} = await axios.get("http://localhost:3001/data/1");
+            const {data} = await axios.get(`http://localhost:3001/data/${d_id}`);
        
             setdata(data);
             setId(data.id)
