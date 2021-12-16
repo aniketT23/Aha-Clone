@@ -35,31 +35,38 @@
         }
       ],
       "Similar": [
-        { "id":2,
+        {
+          "id": 2,
           "image": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/45d7b099162df150622bbeb0456ea85c5c10f9e9/watchPage/watch-page/src/media/similarity1.svg",
           "name": "Maa Vintha Gaa..."
         },
-        {"id":2,
+        {
+          "id": 2,
           "image": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/45d7b099162df150622bbeb0456ea85c5c10f9e9/watchPage/watch-page/src/media/similarity1.svg",
           "name": "Maa Vintha Gaa..."
         },
-        {"id":2,
+        {
+          "id": 2,
           "image": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/45d7b099162df150622bbeb0456ea85c5c10f9e9/watchPage/watch-page/src/media/similarity1.svg",
           "name": "Maa Vintha Gaa..."
         },
-        {"id":2,
+        {
+          "id": 2,
           "image": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/45d7b099162df150622bbeb0456ea85c5c10f9e9/watchPage/watch-page/src/media/similarity1.svg",
           "name": "Maa Vintha Gaa..."
         },
-        {"id":2,
+        {
+          "id": 2,
           "image": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/45d7b099162df150622bbeb0456ea85c5c10f9e9/watchPage/watch-page/src/media/similarity1.svg",
           "name": "Maa Vintha Gaa..."
         },
-        {"id":2,
+        {
+          "id": 2,
           "image": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/45d7b099162df150622bbeb0456ea85c5c10f9e9/watchPage/watch-page/src/media/similarity1.svg",
           "name": "Maa Vintha Gaa..."
         },
-        {"id":2,
+        {
+          "id": 2,
           "image": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/45d7b099162df150622bbeb0456ea85c5c10f9e9/watchPage/watch-page/src/media/similarity1.svg",
           "name": "Maa Vintha Gaa..."
         }
@@ -163,5 +170,103 @@
       ]
     }
   ],
-  "watchList": []
+  "watchList": [
+    {
+      "id": 2,
+      "categories": "shows",
+      "premium": true,
+      "title": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/title_logo_p.svg",
+      "metaData": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/metadata.svg",
+      "description": " A love story between Jaya Krishna and Deepti, set in the late 1990s, comes alive in this periodic drama",
+      "main_bg": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/aee023eb0f5f4503eb11737ad0dda99e5862da69/watchPage/watch-page/src/media/main_div_watch_1.svg",
+      "tags": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/tags.svg",
+      "play": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/12bcb804ad550e2124c4633c969f1c2e06597f57/watchPage/watch-page/src/media/Startwatcing.svg",
+      "watchlist_tile": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/ca3237588afaca2d315ed66e2e1777e1c6992585/watchPage/watch-page/src/media/watchlist_show1.svg",
+      "tile_name": "Shit happens",
+      "cast": [
+        {
+          "name": "Suhas Pogalu",
+          "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr38wQMij1VgwvbYxeURkehPjY3XQWaxGhSw1ELRJ5HnXrEg-WTQ1JBaz5SclWDBqwh6I&usqp=CAU"
+        },
+        {
+          "name": "Suhas Pogalu",
+          "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr38wQMij1VgwvbYxeURkehPjY3XQWaxGhSw1ELRJ5HnXrEg-WTQ1JBaz5SclWDBqwh6I&usqp=CAU"
+        },
+        {
+          "name": "Suhas Pogalu",
+          "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr38wQMij1VgwvbYxeURkehPjY3XQWaxGhSw1ELRJ5HnXrEg-WTQ1JBaz5SclWDBqwh6I&usqp=CAU"
+        },
+        {
+          "name": "Suhas Pogalu",
+          "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr38wQMij1VgwvbYxeURkehPjY3XQWaxGhSw1ELRJ5HnXrEg-WTQ1JBaz5SclWDBqwh6I&usqp=CAU"
+        },
+        {
+          "name": "Suhas Pogalu",
+          "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr38wQMij1VgwvbYxeURkehPjY3XQWaxGhSw1ELRJ5HnXrEg-WTQ1JBaz5SclWDBqwh6I&usqp=CAU"
+        }
+      ],
+      "Similar": [
+        {
+          "image": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/45d7b099162df150622bbeb0456ea85c5c10f9e9/watchPage/watch-page/src/media/similarity1.svg",
+          "name": "Maa Vintha Gaa..."
+        },
+        {
+          "image": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/45d7b099162df150622bbeb0456ea85c5c10f9e9/watchPage/watch-page/src/media/similarity1.svg",
+          "name": "Maa Vintha Gaa..."
+        },
+        {
+          "image": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/45d7b099162df150622bbeb0456ea85c5c10f9e9/watchPage/watch-page/src/media/similarity1.svg",
+          "name": "Maa Vintha Gaa..."
+        },
+        {
+          "image": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/45d7b099162df150622bbeb0456ea85c5c10f9e9/watchPage/watch-page/src/media/similarity1.svg",
+          "name": "Maa Vintha Gaa..."
+        },
+        {
+          "image": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/45d7b099162df150622bbeb0456ea85c5c10f9e9/watchPage/watch-page/src/media/similarity1.svg",
+          "name": "Maa Vintha Gaa..."
+        },
+        {
+          "image": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/45d7b099162df150622bbeb0456ea85c5c10f9e9/watchPage/watch-page/src/media/similarity1.svg",
+          "name": "Maa Vintha Gaa..."
+        },
+        {
+          "image": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/45d7b099162df150622bbeb0456ea85c5c10f9e9/watchPage/watch-page/src/media/similarity1.svg",
+          "name": "Maa Vintha Gaa..."
+        }
+      ],
+      "episodes": [
+        {
+          "banner_img": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/f833738fbdcb53eb75630a74d97bfabf31150f2d/watchPage/watch-page/src/media/episodecard.svg",
+          "ep_title": "Hooker??",
+          "duration": "24min",
+          "description": "College buddies Harsha, Sameer and Sathvik realize on their convocation day that they haven’t lived life fully. They decide to take the wild route of hiring a hooker to officially come of age!"
+        },
+        {
+          "banner_img": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/f833738fbdcb53eb75630a74d97bfabf31150f2d/watchPage/watch-page/src/media/episodecard.svg",
+          "ep_title": "Hooker??",
+          "duration": "24min",
+          "description": "College buddies Harsha, Sameer and Sathvik realize on their convocation day that they haven’t lived life fully. They decide to take the wild route of hiring a hooker to officially come of age!"
+        },
+        {
+          "banner_img": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/f833738fbdcb53eb75630a74d97bfabf31150f2d/watchPage/watch-page/src/media/episodecard.svg",
+          "ep_title": "Hooker??",
+          "duration": "24min",
+          "description": "College buddies Harsha, Sameer and Sathvik realize on their convocation day that they haven’t lived life fully. They decide to take the wild route of hiring a hooker to officially come of age!"
+        },
+        {
+          "banner_img": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/f833738fbdcb53eb75630a74d97bfabf31150f2d/watchPage/watch-page/src/media/episodecard.svg",
+          "ep_title": "Hooker??",
+          "duration": "24min",
+          "description": "College buddies Harsha, Sameer and Sathvik realize on their convocation day that they haven’t lived life fully. They decide to take the wild route of hiring a hooker to officially come of age!"
+        },
+        {
+          "banner_img": "https://raw.githubusercontent.com/aniketT23/Aha-Clone/f833738fbdcb53eb75630a74d97bfabf31150f2d/watchPage/watch-page/src/media/episodecard.svg",
+          "ep_title": "Hooker??",
+          "duration": "24min",
+          "description": "College buddies Harsha, Sameer and Sathvik realize on their convocation day that they haven’t lived life fully. They decide to take the wild route of hiring a hooker to officially come of age!"
+        }
+      ]
+    }
+  ]
 }

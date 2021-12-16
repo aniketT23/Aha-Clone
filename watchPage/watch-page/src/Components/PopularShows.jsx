@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react/cjs/react.development"
 import axios from "axios";
 import "./PopularShows.css"
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 function PopularShows({id,castCheck}){
     const [data,setData] = useState([]);
+    const history  = useHistory()
     const data_getting =async ()=>{
       
         try{

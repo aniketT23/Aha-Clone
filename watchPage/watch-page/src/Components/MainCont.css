@@ -342,13 +342,13 @@ top: 46px;
 flex: none;
 order: 1;
 flex-grow: 0;
-margin: -37px 82px;
+margin: -37px 101px;
 }
 .watchlist_p_text{
     position: static;
 width: 44px;
 height: 12px;
-left: 79px;
+left:10%;
 top: 0px;
 
 /* Button 2 (tag) */
@@ -371,7 +371,7 @@ color: #B7B8B7;
 flex: none;
 order: 1;
 flex-grow: 0;
-margin: 0px 24px;
+margin: 0px 15px;
 }
 
 .delete_watchlist_button_p{
