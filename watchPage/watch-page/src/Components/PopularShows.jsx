@@ -18,14 +18,21 @@ function PopularShows({id,castCheck}){
     }
     useEffect(()=>{
         data_getting();
-    },[])
+    },[id])
 
     return (
         <div className={castCheck==true?"popular_main_div_p":"popular_main_div2_p"}>
             <p className="popular_shows_text_p">Popular Shows</p>
             <div className="popularList_div_p">
                 {data.map((el,i)=>{
-                    return <div key={i} className="popluarShows_tile_p">
+                    return <div key={i} onClick={()=>{
+                        history.push({
+                            pathname:"/watchpage",
+                            state:{
+                                id:el.id
+                            }
+                        })
+                    }}className="popluarShows_tile_p">
                          <img src={el.image} alt="show_img" />
                         <p>{el.name}</p>
                     </div>

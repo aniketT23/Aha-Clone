@@ -22,7 +22,12 @@ export const WatchList = ()=>{
         <div className="main_bg_p">
                 <div className="watchlist_button_div_p">
                     <button className="back_button_p" onClick={()=>{history.goBack()}}  />
-                       <p className="watch_text_p">Watchlist</p>
+                       <p className="watch_text_p" onClick={()=>{
+                           history.push({
+                               pathname:"/watchpage",
+                               state:{id:2}
+                           })
+                       }}>Watchlist</p>
                     
                 </div>
 

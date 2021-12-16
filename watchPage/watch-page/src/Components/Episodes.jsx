@@ -2,8 +2,9 @@
 import { useEffect, useState } from "react/cjs/react.development";
 import axios from "axios";
 import "./Episodes.css"
-import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory, useLocation } from "react-router-dom/cjs/react-router-dom.min";
 export const Episodes =({id})=>{
+    const history=useHistory();
     const [d,setData] = useState([]);
     const data_getting =async ()=>{
       
@@ -36,7 +37,16 @@ export const Episodes =({id})=>{
             <div className="episode_container_p">
             {d.map((el,i)=>{
                   return   <div key={i} className="Episode_List_div">
-                     <img src={el.banner_img} alt="banner_logo" />
+                     <img  onClick={()=>{
+                      history.push({
+                          pathname:"/check",
+                          target:"_blank",
+                          state:{
+                            url:"https://youtu.be/Luq2aEeRoKQ",
+                          
+                          }
+                      })
+                  }} src={el.banner_img} alt="banner_logo" />
                      <div>
                      <div className="ep_div">
                          <p className="ep_name_p">{el.ep_title}</p>

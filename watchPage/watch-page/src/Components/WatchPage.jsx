@@ -7,13 +7,17 @@ import Similarity from "./Similarty";
 import { MainCont } from "./Watchpage_show_info_title"
 import "./WatchPge.css"
 import { Episodes } from "./Episodes";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
-export const WatchPage =({id})=>{
+
+export const WatchPage =()=>{
     const [shows,setShows] = useState(false);
     const [castCheck,setcastcheck] = useState(true) 
-
+    const location = useLocation();
+    const  id= location.state.id 
     const data_getting =async ()=>{
-      
+       console.log(id)
+     
         try{
            
             const {data} = await axios.get(`http://localhost:3001/data/${id}`);
@@ -32,7 +36,7 @@ export const WatchPage =({id})=>{
     }
     useEffect(()=>{
         data_getting();
-    },[])
+    },[id])
    
     return (
         <div>
