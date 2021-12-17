@@ -45,7 +45,7 @@ export const WatchPage =()=>{
            
         
              <div className="details_main_div_p">
-                    <div className="cast_details_div_p">
+                    <div className={castCheck===false?"cast_details_div_p details_main_div_p_height":"cast_details_div_p"}>
                         {shows&& <button onClick={()=>{
                                setcastcheck(false)
                          }} className={!castCheck?"cast_movie_p active_border_p":"cast_movie_p"}>Episodes</button>}
@@ -73,6 +73,7 @@ export const WatchPage =()=>{
                     <PopularShows id={id}  castCheck={castCheck} />
                    
              </div>
+           
         </div>
     )
 }

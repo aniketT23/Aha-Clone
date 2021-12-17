@@ -39,8 +39,10 @@ function PopularShows({id,castCheck}){
                         <p>{el.name}</p>
                     </div>
                 })}
+               
             </div>
-
+           
+          
         </div>
     )
 

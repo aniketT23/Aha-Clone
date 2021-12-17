@@ -9,8 +9,8 @@
    padding: 0px;
    background: #35393F;
    width: 100%;
-left: 0px;
-top: 504px;
+    left: 0px;
+    top: 504px;
 border-radius: 0px;
    height: 200%;
    position: absolute;
@@ -20,7 +20,7 @@ border-radius: 0px;
    bottom: 0%;
 }
 .details_main_div_p_height{
-    height: 179%;
+    height: 122%;
 }
 .cast_details_div_p{
     display: flex;
@@ -197,4 +197,11 @@ margin: 8px 0px;
 .active_border_p{
     border-bottom: 2px solid  #E85C3B;
     color: #FFFFFF;    
+}
+.footer_p_check{
+    left: 0%;
+right: 0%;
+top: 85.21%;
+bottom: 0%;
+margin-top: 53%;
 }

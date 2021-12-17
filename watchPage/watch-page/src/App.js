@@ -21,9 +21,9 @@ function App() {
          }
        })
      }}><h1>Click Me </h1></button>
-
+      
     
-      <div>
+      
         <Switch>
         <Route exact path="/watchpage" >
             <WatchPage />
@@ -41,9 +41,14 @@ function App() {
         <Episodes id={1}/>
         </Route>
         </Switch>
-        
+        <div className='footer_p_check'>
+        Component-Based
+Build encapsulated components that manage their own state, then compose them to make complex UIs.
+
+Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
+        </div>
       </div>
-    </div>
+   
   );
 }
 
