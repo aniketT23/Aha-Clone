@@ -12,7 +12,7 @@
 left: 0px;
 top: 504px;
 border-radius: 0px;
-   height: 1200px;
+   height: 200%;
    position: absolute;
    left: 0%;
    right: 91.46%;
@@ -20,7 +20,7 @@ border-radius: 0px;
    bottom: 0%;
 }
 .details_main_div_p_height{
-    height: 1200px;
+    height: 179%;
 }
 .cast_details_div_p{
     display: flex;
