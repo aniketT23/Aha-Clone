@@ -1,7 +1,11 @@
+.episode_div_p{
+    margin-top: 2%;
+    margin-left: 6%;
+}
 .Episode_List_div{
     display: flex;
-flex-direction: row;
-align-items: flex-start;
+ flex-direction: row;/*
+align-items: flex-start; */
 padding: 0px;
 
 
@@ -14,7 +18,7 @@ margin: 3%;
 .ep_div{
     display: flex;
 flex-direction: column;
-align-items: flex-start;
+/* align-items: flex-start; */
 padding: 0px;
 
 position: static;
@@ -32,12 +36,12 @@ flex-grow: 0;
 margin: 10px 0px;
 }
 .ep_duration_div_p{
-    position: static;
+    /* position: static;
+
+left: 0px;
+top: 26px; */
 width: 128%;
 height: 17px;
-left: 0px;
-top: 26px;
-
 /* Caption */
 
 font-family: Proxima Nova;
@@ -63,12 +67,12 @@ flex-grow: 0;
 margin: 4px 0px;
 }
 .ep_name_p{
-    position: static;
+    /* position: static;
+
+left: 0px;
+top: 0px; */
 width: 92px;
 height: 22px;
-left: 0px;
-top: 0px;
-
 /* H4 */
 
 font-family: Proxima Nova;
@@ -95,16 +99,16 @@ margin: 4px 0px;
 }
 .episode_container_p{
   
-    margin-top:15%;
-    margin-left:3%
+    margin-top:5%;
+    margin-left:-7%
 }
 .Episode_List_div>img{
-    position: static;
+    /* position: static;
+
+left: 3%;
+top: 5%; */
 width: 162px;
 height: 94px;
-left: 3%;
-top: 5%;
-
 border-radius: 8px;
 cursor: pointer;
 /* Inside Auto Layout */
@@ -117,15 +121,15 @@ margin: 2px 12px;
 .season_tag_p{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     padding: 10px 18px;
     
-    position: absolute;
+    /* position: absolute;
+    
+    left: 3%;
+    top: 5%; */
     width: 92px;
     height: 37px;
-    left: 3%;
-    top: 5%;
-    
     /* secondary/dark ash */
     
     background: #1A1D1E;
@@ -138,12 +142,12 @@ margin: 2px 12px;
 }
 
 .ep_description_div_p{
-    position: static;
+    /* position: static;
+
+left: 0px;
+top: 53px; */
 width: 731px;
 height: 38px;
-left: 0px;
-top: 53px;
-
 /* Body */
 
 font-family: Proxima Nova;

@@ -5,11 +5,15 @@ flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 background: #35393F;
-position: absolute;
-width: 85%;
-height: 148px;
-left: 3%;
-top: 40%;
+/* position: absolute; */
+
+/* left: 3%;
+top: 40%; */
+/* width: 100%; */
+height: 224px;
+margin-top: 0%;
+margin-left: 37%;
+width: 850px;
 }
 .popular_main_div2_p{
     display: flex;
@@ -17,19 +21,23 @@ flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 background: #35393F;
-position: absolute;
-width: 85%;
-height: 148px;
+/* position: absolute;
+
 left: 3%;
-top: 80%;
+top: 80%; */
+/* width: 100%; */
+width: 850px;
+height: 224px;
+margin-top: 0%;
+margin-left: 37%;
 }
 .popular_shows_text_p{
-    position: static;
+    /* position: static;
+
+left: 0px;
+top: 0px; */
 width: 100%;
 height: 29px;
-left: 0px;
-top: 0px;
-
 /* H3 */
 
 font-family: Proxima Nova;
@@ -51,6 +59,7 @@ flex: none;
 order: 0;
 flex-grow: 0;
 margin: 16px 0px;
+margin-left: -53%;
 }
 
 .popularList_div_p{
@@ -58,12 +67,12 @@ margin: 16px 0px;
 flex-direction: row;
 align-items: flex-start;
 padding: 0px;
-
+/* 
 position: static;
-width: 100%;
 height: 103px;
 left: 0px;
-top: 45px;
+top: 45px; */
+width: 100%;
 
 
 /* Inside Auto Layout */
@@ -72,6 +81,7 @@ flex: none;
 order: 1;
 flex-grow: 0;
 margin: 16px 0px;
+margin-left: -53%;
 }
 .popluarShows_tile_p{
     display: flex;
@@ -79,13 +89,13 @@ flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 
-position: static;
-width: 134px;
-height: 103px;
-left: 0px;
-top: 0px;
-cursor: pointer;
+/* position: static;
 
+left: 0px;
+top: 0px; */
+cursor: pointer;
+width: 19%;
+height: 12%;
 /* Inside Auto Layout */
 
 flex: none;
@@ -95,12 +105,12 @@ margin: 0px 6px;
 }
 
 .popluarShows_tile_p>img{
-    position: static;
+    /* position: static;
+
+left: 0px;
+top: 0px; */
 width: 134px;
 height: 76px;
-left: 0px;
-top: 0px;
-
 
 border-radius: 8px;
 
@@ -113,14 +123,14 @@ margin: 8px 0px;
 }
 
 .popluarShows_tile_p>p{
-    position: static;
-    width: 134px;
-    height: 19px;
+    /* position: static;
+    
     left: 0px;
     top: 84px;
-    
+     */
     /* Body */
-    
+    width: 134px;
+    height: 19px;
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: 600;

@@ -12,7 +12,7 @@ function App() {
   console.log("efreshing");
   const history = useHistory()
   return (
-    <div className="App">
+    <div>
      <button onClick={()=>{
        history.push({
          pathname:"/watchpage",

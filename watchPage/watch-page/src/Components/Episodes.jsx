@@ -13,14 +13,8 @@ export const Episodes =({id})=>{
             const {data} = await axios.get(`http://localhost:3001/data/${id}`);
                
            //console.log(data.episodes);
-           let temp=[];
-           data.episodes.map((el,i)=>{
-               if(i<6){
-                    temp.push(el)
-               }
-           })
-           console.log(temp)
-           setData(temp);
+          
+           setData(data.episodes);
         }catch(err){
                 alert("Somthing went wrong")
         }
@@ -32,7 +26,7 @@ export const Episodes =({id})=>{
     },[])
    
     return (
-        <div >
+        <div className="episode_div_p">
             <div className="season_tag_p"></div>
             <div className="episode_container_p">
             {d.map((el,i)=>{

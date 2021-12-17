@@ -24,10 +24,10 @@ function Similarity({id,castCheck}){
     },[])
 
     return(
-        <div>
+    
             <div className={castCheck===true?"similar_main_div_p":"similar_main_div2_p"}>
                 <p className="similar_text_p">Similar to this</p>
-                <div style={{display:"flex"}}>
+                <div style={{display:"flex",width:"95%",marginLeft:"2%"}}>
                 {data.map((el,i)=>{
                     return <div key={i} onClick={()=>{
                         history.push({
@@ -44,7 +44,7 @@ function Similarity({id,castCheck}){
                 </div>
                 
             </div>
-        </div>
+   
     )
 
 }

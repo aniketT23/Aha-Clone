@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Cast from "./Cast";
 import PopularShows from "./PopularShows";
@@ -7,7 +7,7 @@ import Similarity from "./Similarty";
 import { MainCont } from "./Watchpage_show_info_title"
 import "./WatchPge.css"
 import { Episodes } from "./Episodes";
-import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import { useLocation } from "react-router-dom";
 
 
 export const WatchPage =()=>{
@@ -39,12 +39,17 @@ export const WatchPage =()=>{
     },[id])
    
     return (
-        <div>
-            <MainCont d_id={id}/>   
-         
+        <div >
+            <MainCont d_id={id}/> 
+            {/* <div>
+                <button>Click me </button>
+                <button>Click me </button>
+                <button>Click me </button>
+                <button>Click me </button>
+            </div> */}
            
         
-             <div className="details_main_div_p">
+            <div className="details_main_div_p">
                     <div className={castCheck===false?"cast_details_div_p details_main_div_p_height":"cast_details_div_p"}>
                         {shows&& <button onClick={()=>{
                                setcastcheck(false)
@@ -58,21 +63,21 @@ export const WatchPage =()=>{
 
 
                          <button className="details_movie_p">Details</button>
-                        
+                         
                     </div>
-
-
+                    
+                   
+                   
                     <div className="divider_p"></div>
-
-
                     {shows?castCheck===false?<Episodes id={id} />:<>
                     <Cast id={id}  />
                     </> :<Cast id={id}  />}
-                        
+                      
                     <Similarity id={id} castCheck={castCheck} />
+                   
                     <PopularShows id={id}  castCheck={castCheck} />
                    
-             </div>
+              </div> 
            
         </div>
     )
