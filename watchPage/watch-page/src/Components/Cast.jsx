@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
+
 import { useEffect, useState } from "react/cjs/react.development"
 
 import "./WatchPge.css"
@@ -7,7 +7,7 @@ import "./WatchPge.css"
 function Cast ({id}){
     const [cast,setCast] = useState([]);
     const getCast = async()=>{
-         const {data} = await axios.get(`http://localhost:3001/data/${id}`);
+         const {data} = await axios.get(`http://localhost:2233/aha/most_watched/${id}`);
          //console.log(data.cast);
          setCast(data.cast)
     }

@@ -3,7 +3,7 @@ import "./MainCont.css";
 import {useState,useEffect} from "react"
 
 import axios from "axios"
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom";
 
 
 export const MainCont =({d_id})=>{
@@ -12,10 +12,11 @@ export const MainCont =({d_id})=>{
     const [watchListed,setWatchListed] = useState(null);
     const [id,setId] = useState(null)
     const data_getting =async ()=>{
-      
+        if(watchListed===null)
+      checking_id()
         try{
            
-            const {data} = await axios.get(`http://localhost:3001/data/${d_id}`);
+            const {data} = await axios.get(`http://localhost:2233/aha/most_watched/${d_id}`);
        
             setdata(data);
             setId(data.id)
@@ -26,49 +27,56 @@ export const MainCont =({d_id})=>{
     }
     const watchListing  =async ()=>{
        try{
-        await axios.post("http://localhost:3001/watchList",data);
+        const loal_data = JSON.parse(localStorage.getItem("watchlist"));
+        
+       
+        const d =[...loal_data,data]
+        localStorage.setItem("watchlist",JSON.stringify(d))
         setWatchListed(true)
         alert(`You can watch this show any time now from your watchlist`);
-        const {data} = await axios.get(`http://localhost:3001/watchList`);
-        console.log(data)
+      
        }catch(err){
         alert("Somthing went wrong")
        }
           
     }
-    const checking_id =async ()=>{
-        console.log("Checking")
-       try{
-        const {data} = await axios.get("http://localhost:3001/watchList")
-        // console.log(data)
-               data.map((el)=>{
-                 if(el.id===id){
-                      
-                       setWatchListed(true)
-                   }
-                  
-               })
-       }catch(err){
-              alert("Somthing went wrong")
-       }
+    const checking_id = ()=>{
+        const d1 = JSON.parse(localStorage.getItem("watchlist"))
+        d1?.map((el)=>{
+            if(el._id==data._id){
+                setWatchListed(true)
+            }
+            return 0;
+        })
        
     }
     const handlingDelete = async()=>{
         try{
-            await axios.delete(`http://localhost:3001/watchList/${id}`);
-            const data = await axios.get(`http://localhost:3001/watchList`);
-         console.log(data)
+            const local_data = JSON.parse(localStorage.getItem("watchlist"));
+            const d2 = local_data?.map((el)=>{
+                if(el._id!==data._id){
+                    console.log(el._id)
+                    return el;
+                }
+            })
+            console.log(d2)
+            if(d2[0]===undefined)
+            localStorage.setItem("watchlist",JSON.stringify([]))
+            else
+            localStorage.setItem("watchlist",JSON.stringify(d2))
             setWatchListed(false);
         }catch(err){
         alert("Somthing went wrong")
        }
            
     }
+    const check = localStorage.getItem("watchlist")
     useEffect(()=>{
      //   console.log("refreshing")
+    
        data_getting()
         checking_id()
-     },[watchListed])
+     },[watchListed,check])
      const main_bg = data.main_bg;
     return (
         <>

@@ -64,14 +64,14 @@ color: #B7B8B7;
 flex: none;
 order: 1;
 flex-grow: 0;
-margin: 4px 0px;
+margin: -3px 0px;
 }
 .ep_name_p{
     /* position: static;
 
 left: 0px;
 top: 0px; */
-width: 92px;
+width: 200px;
 height: 22px;
 /* H4 */
 
@@ -108,7 +108,7 @@ margin: 4px 0px;
 left: 3%;
 top: 5%; */
 width: 162px;
-height: 94px;
+height: 100px;
 border-radius: 8px;
 cursor: pointer;
 /* Inside Auto Layout */
@@ -169,5 +169,5 @@ color: #FFFFFF;
 flex: none;
 order: 1;
 flex-grow: 0;
-margin: 10px 0px;
+margin: 0px 0px;
 }

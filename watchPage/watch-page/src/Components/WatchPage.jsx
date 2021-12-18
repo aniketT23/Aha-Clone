@@ -20,7 +20,7 @@ export const WatchPage =()=>{
      
         try{
            
-            const {data} = await axios.get(`http://localhost:3001/data/${id}`);
+            const {data} = await axios.get(`http://localhost:2233/aha/most_watched/${id}`);
        
            if(data.categories==="shows"){
                 setShows(true);
@@ -35,18 +35,14 @@ export const WatchPage =()=>{
       
     }
     useEffect(()=>{
+
         data_getting();
     },[id])
    
     return (
         <div >
             <MainCont d_id={id}/> 
-            {/* <div>
-                <button>Click me </button>
-                <button>Click me </button>
-                <button>Click me </button>
-                <button>Click me </button>
-            </div> */}
+            
            
         
             <div className="details_main_div_p">

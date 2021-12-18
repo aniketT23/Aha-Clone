@@ -7,7 +7,10 @@ import { Dummy } from './Components/DummyIframe';
 import { Episodes } from './Components/Episodes';
 import { WatchList } from './Components/WatchListPage';
 import { WatchPage } from './Components/WatchPage';
-
+//61be05b5e26140757605d89e
+//61bdea35e26140757605d888
+if(localStorage.getItem("watchlist")==null)
+localStorage.setItem("watchlist",JSON.stringify([]))
 function App() {
   console.log("efreshing");
   const history = useHistory()
@@ -17,7 +20,7 @@ function App() {
        history.push({
          pathname:"/watchpage",
          state:{
-           id:1
+           id:"61be05b5e26140757605d89e"
          }
        })
      }}><h1>Click Me </h1></button>
@@ -31,14 +34,14 @@ function App() {
         <Route exact path="/check">
               <Dummy  />
         </Route>
-        <Route exact path="/WatchList">
+        <Route exact  path="/WatchList">
            <WatchList />
         </Route>
         <Route path="/cast">
           <Cast />
         </Route>
         <Route path="/episodes">
-        <Episodes id={1}/>
+        <Episodes />
         </Route>
         </Switch>
         <div className='footer_p_check'>

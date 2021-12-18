@@ -198,7 +198,7 @@ color: #FFFFFF;
 flex: none;
 order: 1;
 flex-grow: 0;
-margin: 18px 0px;
+margin: 14px 0px;
 margin-left: 86px;
 }
 
@@ -221,7 +221,7 @@ height: 38px;
 flex: none;
 order: 1;
 flex-grow: 0;
-margin: 18px 0px;
+margin:38px 0px;
 margin-left: 78px;
 }
 
@@ -290,7 +290,7 @@ height: 58px;
 flex: none;
 order: 1;
 flex-grow: 0;
-margin: 24px 90px;
+margin: -20px 90px;
 }
 
 .watchlist_p{
@@ -344,7 +344,7 @@ height: 12px;
 flex: none;
 order: 1;
 flex-grow: 0;
-margin: -37px 101px;
+margin: 9px 101px;
 margin-left: 15%;
 }
 .watchlist_p_text{

@@ -1,18 +1,23 @@
 import "./Similarity.css"
 import axios from "axios";
-import {useState,useEffect} from "react"
-import { Redirect } from "react-router-dom";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import {useState,useEffect} from "react";
 function Similarity({id,castCheck}){
     const [data,SetData] = useState([]);
-    const history = useHistory();
+
     const data_getting =async ()=>{
       
         try{
            
-            const {data} = await axios.get(`http://localhost:3001/data/${id}`);
-       
-            SetData(data.Similar);
+            const {data} = await axios.get(`http://localhost:2233/aha/most_watched/${id}`);
+                let temp =[];
+                data.similar.map((el,i)=>{
+                    if(i<=6){
+                        temp.push(el)
+                    }
+                    return ;
+                })
+         
+            SetData(temp);
             
         }catch(err){
                 alert("Somthing went wrong")
@@ -28,17 +33,10 @@ function Similarity({id,castCheck}){
             <div className={castCheck===true?"similar_main_div_p":"similar_main_div2_p"}>
                 <p className="similar_text_p">Similar to this</p>
                 <div style={{display:"flex",width:"95%",marginLeft:"2%"}}>
-                {data.map((el,i)=>{
-                    return <div key={i} onClick={()=>{
-                        history.push({
-                            pathname:"/watchpage",
-                            state:{
-                                id:el.id
-                            }
-                        })
-                    }} className="similarity_movie_tile">
-                        <img src={el.image} alt="similarity_image" />
-                        <p>{el.name}!</p>
+                {data.map((el)=>{
+                    return <div key={el._id}  className="similarity_movie_tile">
+                        <img src={el.imageurl} alt="similarity_image" />
+                        <p>{el.title}!</p>
                     </div>
                 })}
                 </div>

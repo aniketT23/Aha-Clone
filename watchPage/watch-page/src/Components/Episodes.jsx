@@ -10,7 +10,7 @@ export const Episodes =({id})=>{
       
         try{
            
-            const {data} = await axios.get(`http://localhost:3001/data/${id}`);
+            const {data} = await axios.get(`http://localhost:2233/aha/most_watched/${id}`);
                
            //console.log(data.episodes);
           
@@ -41,7 +41,7 @@ export const Episodes =({id})=>{
                           }
                       })
                   }} src={el.banner_img} alt="banner_logo" />
-                     <div>
+                     <div style={{margin:"0%",padding:"0%",marginTop:"-1%"}}>
                      <div className="ep_div">
                          <p className="ep_name_p">{el.ep_title}</p>
                          <div className="ep_duration_div_p">
