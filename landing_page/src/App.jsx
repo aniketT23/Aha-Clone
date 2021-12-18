@@ -14,7 +14,8 @@ import { Drama } from "./components/drama";
 import { Romance } from "./components/romance";
 import { NewAdd } from "./components/newleyAdded";
 import { Geners } from "./components/genrers";
-
+import { Actors } from "./components/actor";
+import { Login } from "./components/login";
 function App() {
   return (
     <div className="App">
@@ -29,8 +30,11 @@ function App() {
       <Geners heading="Geners"></Geners>
       <FreeMovies heading="Free Movies"></FreeMovies>
       <Thriller heading="Thriller On Aha"></Thriller>
+      <Actors heading="Actors (A-Z)"></Actors>
       <Drama heading="Drama on Aha"></Drama>
       <Romance heading="Romance"></Romance>
+
+      {/* <Login></Login> */}
     </div>
   );
 }
