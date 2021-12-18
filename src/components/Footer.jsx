@@ -20,7 +20,7 @@ function Footer() {
           <div className="footerapp">
             <img
               className="footerlogo"
-              src="../ahacustomvecologo.svg"
+              src="../ahafooter.png"
               alt="ahavecorlogo"
             />
             <div>
@@ -32,7 +32,7 @@ function Footer() {
                 <a href="https://www.facebook.com/ahavideoIN">
                   <img
                     className="social-icons"
-                    src="../facebook-icon.svg"
+                    src="../Facebookicon.png"
                     alt=""
                   />
                 </a>
@@ -67,7 +67,11 @@ function Footer() {
                   <img loading="lazy" src="../iosbanner.svg" alt="IOS icon" />
                 </a>
               </div>
-              <div className="textfooter">Contact us: support@aha.video</div>
+              <div className="textfooter">
+                <a href="mailto:support@aha.video">
+                  Contact us: support@aha.video
+                </a>
+              </div>
             </div>
           </div>
           <div>
@@ -229,7 +233,7 @@ function Footer() {
           </div>
         </div>
 
-    <hr className="footerline"/>
+        <hr className="footerline" />
 
         <div className="footermetadata">
           <div className="metadataleft">
@@ -246,8 +250,7 @@ function Footer() {
               <h5>Powered by</h5>
               <div>
                 <img
-
-                className="firstflight"
+                  className="firstflight"
                   loading="lazy"
                   src="../firstflightbanner1.svg"
                   alt="Firstlight icon"

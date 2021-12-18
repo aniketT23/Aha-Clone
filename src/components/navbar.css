@@ -1,13 +1,18 @@
-.nav {
+.navbar {
   /* position: fixed; */
+  /* background: transparent; */
   display: grid;
   grid-template-columns: auto auto;
   width: 100%;
   z-index: 8;
   height: 75 px;
   top: 0;
-  background-color: #1d1e20;
+  background-color: #154fc4;
   color: #fff;
+  position: sticky;
+}
+.navbar .active {
+  background-color: #1d1e20;
 }
 .left {
   display: flex;

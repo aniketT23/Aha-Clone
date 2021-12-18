@@ -15,7 +15,7 @@
   font-family: proximaNova;
   font-style: normal;
   margin-top: 73px;
-  margin-right: 60px;
+  margin-right: 50px;
   color: #fff;
   font-size: 16px;
   line-height: 16px;
@@ -42,12 +42,17 @@
   cursor: pointer;
 }
 .textfooter {
+ 
   font-family: proximaNova;
   font-style: normal;
   margin: 0 0 8px 50px;
   color: #fff;
   font-size: 20px;
   line-height: 14px;
+}
+.textfooter>a{
+   text-decoration: none;
+   color: #fff;
 }
 .socialmedia {
   display: flex;
