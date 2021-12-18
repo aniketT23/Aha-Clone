@@ -13,6 +13,8 @@ import { maxHeight } from "@mui/system";
 import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
 import axios from "axios";
+import { DataErr, DataLoading, DataSucess, getData } from "./store/action";
+import { useDispatch, useSelector, shallowEqual } from "react-redux";
 
 const images = [
   {
@@ -92,11 +94,10 @@ const AhaDiv = styled.div`
 
 `;
 
-export const AhaOrignal = ({ heading, slide }) => {
+export const AhaOrignal = ({ heading }) => {
   const theme = useTheme();
   const [activeStep, setActiveStep] = useState(0);
   const maxSteps = images.length;
-  console.log(typeof slide);
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -110,35 +111,36 @@ export const AhaOrignal = ({ heading, slide }) => {
     setActiveStep(step);
   };
 
-  /* rreuqest */
-  const [image, setImage] = useState();
-
-  const AhaO = async () => {
-    const { data } = await axios.get("http://localhost:2233/aha/ahaOriginals");
-    setImage({ data });
-    console.log("data:-", image);
-  };
+  /* redux */
+  /* const dispatch = useDispatch();
+  const { loading, data, err } = useSelector(
+    (state) => state.image_data,
+    shallowEqual
+  );
+  const [imgD, setImgD] = useState();
 
   useEffect(async () => {
     AhaO();
   }, []);
 
+  const AhaO = async () => {
+    dispatch(getData());
+    try {
+      const { data } = await axios.get(
+        "http://localhost:2233/aha/ahaOriginals"
+      );
+      dispatch(DataSucess(data));
+    } catch (err) {
+      console.log(err);
+      dispatch(DataErr(err));
+    }
+  }; */
+  /* rreuqest */
+
   return (
     <div>
       <h1 style={{ color: "#fff" }}>{heading}</h1>
       <AhaDiv>
-        <Button
-          id="rightBTN"
-          size="large"
-          onClick={handleBack}
-          disabled={activeStep == 0}
-        >
-          {theme.direction === "rtl" ? (
-            <KeyboardArrowRight />
-          ) : (
-            <KeyboardArrowLeft />
-          )}
-        </Button>
         {images.map((step, index) => (
           <div key={step.label}>
             {Math.abs(activeStep - index) <= 8 ? (
@@ -157,8 +159,25 @@ export const AhaOrignal = ({ heading, slide }) => {
             ) : null}
           </div>
         ))}
+      </AhaDiv>
+    </div>
+  );
+};
 
-        <Button
+/*     <Button
+          id="rightBTN"
+          size="large"
+          onClick={handleBack}
+          disabled={activeStep == 0}
+        >
+          {theme.direction === "rtl" ? (
+            <KeyboardArrowRight />
+          ) : (
+            <KeyboardArrowLeft />
+          )}
+        </Button>
+
+<Button
           id="leftBTN"
           size="small"
           onClick={handleNext}
@@ -169,8 +188,4 @@ export const AhaOrignal = ({ heading, slide }) => {
           ) : (
             <KeyboardArrowRight />
           )}
-        </Button>
-      </AhaDiv>
-    </div>
-  );
-};
+        </Button> */

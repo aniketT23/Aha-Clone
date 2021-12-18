@@ -4,7 +4,7 @@
 
 .MuiMobileStepper-dotActive {
     color: red;
-    background-color: none;
+    background-color: white;
 }
 
 .MuiMobileStepper-root {
