@@ -13,8 +13,6 @@ import { maxHeight } from "@mui/system";
 import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
 import axios from "axios";
-import { DataErr, DataLoading, DataSucess, getData } from "./store/action";
-import { useDispatch, useSelector, shallowEqual } from "react-redux";
 
 const images = [
   {
@@ -140,10 +138,24 @@ export const AhaOrignal = ({ heading }) => {
   return (
     <div>
       <h1 style={{ color: "#fff" }}>{heading}</h1>
+
       <AhaDiv>
+        <Button
+          id="rightBTN"
+          size="large"
+          onClick={handleBack}
+          disabled={activeStep == 0}
+        >
+          {theme.direction === "rtl" ? (
+            <KeyboardArrowRight />
+          ) : (
+            <KeyboardArrowLeft />
+          )}
+        </Button>
+
         {images.map((step, index) => (
           <div key={step.label}>
-            {Math.abs(activeStep - index) <= 8 ? (
+            {Math.abs(activeStep - index) <= 5 ? (
               <Box
                 className="home"
                 component="img"
@@ -159,25 +171,8 @@ export const AhaOrignal = ({ heading }) => {
             ) : null}
           </div>
         ))}
-      </AhaDiv>
-    </div>
-  );
-};
 
-/*     <Button
-          id="rightBTN"
-          size="large"
-          onClick={handleBack}
-          disabled={activeStep == 0}
-        >
-          {theme.direction === "rtl" ? (
-            <KeyboardArrowRight />
-          ) : (
-            <KeyboardArrowLeft />
-          )}
-        </Button>
-
-<Button
+        <Button
           id="leftBTN"
           size="small"
           onClick={handleNext}
@@ -188,4 +183,11 @@ export const AhaOrignal = ({ heading }) => {
           ) : (
             <KeyboardArrowRight />
           )}
-        </Button> */
+        </Button>
+      </AhaDiv>
+    </div>
+  );
+};
+
+/*
+ */
