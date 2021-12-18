@@ -7,7 +7,7 @@ h1 {
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    align-items: center;
+    align-items: left;
 }
 
 h3 {
@@ -19,6 +19,27 @@ h3 {
     text-align: left;
     margin-left: 0.5%;
     margin-top: 10px;
+}
+
+.Gcont {
+    position: relative;
+}
+
+#gBox {
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0.75;
+}
+
+p {
+    top: 70px;
+    left: 25%;
+    position: absolute;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
 }
 
 .home {

@@ -13,6 +13,7 @@ import { Thriller } from "./components/thriller";
 import { Drama } from "./components/drama";
 import { Romance } from "./components/romance";
 import { NewAdd } from "./components/newleyAdded";
+import { Geners } from "./components/genrers";
 
 function App() {
   return (
@@ -25,13 +26,11 @@ function App() {
       <MostWatched heading="Most Watched"></MostWatched>
       <Upcoming heading="Upcoming on Aha"></Upcoming>
       <NewAdd heading="Newly Added"></NewAdd>
+      <Geners heading="Geners"></Geners>
       <FreeMovies heading="Free Movies"></FreeMovies>
       <Thriller heading="Thriller On Aha"></Thriller>
       <Drama heading="Drama on Aha"></Drama>
       <Romance heading="Romance"></Romance>
-
-      <AhaOrignal heading="New Releases"></AhaOrignal>
-      <AhaOrignal heading="Top 10 Today"></AhaOrignal>
     </div>
   );
 }
