@@ -1,0 +1,49 @@
+/* .home_top {
+    display: flex;
+} */
+
+
+/* .home_top>div {
+    background: transparent;
+} */
+
+#rightBTN {
+    background: linear-gradient(182deg, #000100 1.69%, rgba(1, 1, 0, 0) 104.62%);
+    padding: 0%;
+    position: absolute;
+    left: -60px;
+    height: 100%;
+    color: white;
+    display: none;
+    border-radius: 0;
+}
+
+#leftBTN {
+    background: linear-gradient(182deg, #000100 1.69%, rgba(1, 1, 0, 0) 104.62%);
+    border-radius: 0;
+    position: absolute;
+    right: -50px;
+    height: 100%;
+    color: white;
+    display: none;
+}
+
+body {
+    background-color: black;
+}
+
+
+/* #rightBTN {
+    position: relative;
+    left: 50px;
+    bottom: 0px;
+    color: white;
+   
+}
+
+#leftBTN {
+    position: relative;
+    right: 50px;
+    bottom: 0px;
+    color: white;
+} */

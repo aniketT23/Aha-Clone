@@ -1,0 +1,15 @@
+.MuiMobileStepper-dots {
+    transform: scale(1.15);
+}
+
+.MuiMobileStepper-dotActive {
+    color: red;
+    background-color: none;
+}
+
+.MuiMobileStepper-root {
+    background-color: rgb(34, 33, 36);
+    max-width: 200px;
+    margin-left: 45%;
+    margin-top: 1%;
+}
