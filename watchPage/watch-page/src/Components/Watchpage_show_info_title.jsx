@@ -29,7 +29,8 @@ export const MainCont =({d_id})=>{
         await axios.post("http://localhost:3001/watchList",data);
         setWatchListed(true)
         alert(`You can watch this show any time now from your watchlist`);
-       
+        const {data} = await axios.get(`http://localhost:3001/watchList`);
+        console.log(data)
        }catch(err){
         alert("Somthing went wrong")
        }
@@ -48,13 +49,15 @@ export const MainCont =({d_id})=>{
                   
                })
        }catch(err){
-        alert("Somthing went wrong")
+              alert("Somthing went wrong")
        }
        
     }
     const handlingDelete = async()=>{
         try{
             await axios.delete(`http://localhost:3001/watchList/${id}`);
+            const data = await axios.get(`http://localhost:3001/watchList`);
+         console.log(data)
             setWatchListed(false);
         }catch(err){
         alert("Somthing went wrong")
@@ -69,7 +72,7 @@ export const MainCont =({d_id})=>{
      const main_bg = data.main_bg;
     return (
         <>
-        <div className="main_div_p" style={{ backgroundImage: `url(${main_bg})` }}>
+        <div className="main_div_p" style={{ backgroundImage: `url(${main_bg})`,backgroundRepeat:"no-repeat",width:"100%" }}>
      <div className="info_cont_p">
     <div>
         {data.premium&&   <div className="tag_div_p">

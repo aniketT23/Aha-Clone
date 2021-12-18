@@ -1,6 +1,6 @@
 .episode_div_p{
     margin-top: 2%;
-    margin-left: 6%;
+    margin-left: 0%;
 }
 .Episode_List_div{
     display: flex;
@@ -77,7 +77,7 @@ height: 22px;
 
 font-family: Proxima Nova;
 font-style: normal;
-font-weight: 600;
+font-weight: 400;
 font-size: 18px;
 line-height: 22px;
 /* identical to box height */
@@ -99,8 +99,8 @@ margin: 4px 0px;
 }
 .episode_container_p{
   
-    margin-top:5%;
-    margin-left:-7%
+    margin-top:-1%;
+    margin-left:-2%
 }
 .Episode_List_div>img{
     /* position: static;
@@ -139,6 +139,7 @@ margin: 2px 12px;
     box-sizing: border-box;
     border-radius: 5px;
  background-image: url(../media/season1.svg); 
+ margin-left: 2%;
 }
 
 .ep_description_div_p{
@@ -152,7 +153,7 @@ height: 38px;
 
 font-family: Proxima Nova;
 font-style: normal;
-font-weight: 600;
+font-weight: 400;
 font-size: 16px;
 line-height: 19px;
 display: flex;

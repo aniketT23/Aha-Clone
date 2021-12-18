@@ -15,7 +15,7 @@ function Cast ({id}){
          getCast()
     },[])
 return (
-    <div>
+   
         <div className="cast_image_p">
                             {cast.map((el,i)=>{
                                 return <div className="cast_tile_p" key={i}>
@@ -26,7 +26,7 @@ return (
                                 </div>
                             })}
                     </div>
-    </div>
+   
 )
 }
 
