@@ -14,7 +14,7 @@ function Navbar() {
   const offset = 70;
   const history = useHistory();
 
-  const [navbar, setNavbar] = React.useState(false);
+   const [color, setColor] = React.useState(false);
   const ColorButton = styled(Button)(({ theme }) => ({
     color: theme.palette.getContrastText(purple[500]),
     backgroundColor: red[500],
@@ -24,20 +24,20 @@ function Navbar() {
     },
   }));
 
-  const changeBackground = () => {
-    console.log(window.scrollY);
-    if (window.scrollY >= 75) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
+   const changeBackground = () => {
+     console.log(window.scrollY);
+     if (window.scrollY >= 75) {
+       setColor(true);
+     } else {
+       setColor(false);
+     }
+   };
 
-  window.addEventListener("scroll", changeBackground);
+   window.addEventListener("scroll", changeBackground);
 
   return (
     <div>
-      <nav className={navbar ? "navbar active" : "navbar"}>
+      <nav className={color ? "navbar scroll" : "navbar"}>
         <div className="left">
           <Link to="/" className="lNav">
             {" "}
