@@ -1,10 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { LandingPage } from "./components/landingPage";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Player from "./components/Player";
 import Login from "./components/SignIn";
+import Signup from "./components/signup";
 import { Switch, Route } from "react-router-dom";
 import Cast from "./components/Cast";
 import { Episodes } from "./components/Episodes";
@@ -20,7 +20,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/">
-          <LandingPage></LandingPage>
+          <LandingPage />
         </Route>
         <Route exact path="/watchpage">
           <WatchPage />
@@ -39,7 +39,10 @@ function App() {
           <Player />
         </Route>
         <Route path="/login">
-          <Login></Login>
+          <Login />
+        </Route>
+        <Route path="/signup">
+          <Signup />
         </Route>
       </Switch>
 
