@@ -49,9 +49,7 @@ export const AhaOrignal = ({ heading }) => {
 
   const AhaO = async () => {
     try {
-      const { data } = await axios.get(
-        "http://localhost:2233/aha/ahaOriginals"
-      );
+      const { data } = await axios.get("http://localhost:2233/aha/originals");
       setImage(data);
       // console.log(data);
     } catch (err) {

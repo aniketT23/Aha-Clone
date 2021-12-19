@@ -31,7 +31,7 @@ function Login() {
           </div>
           <Box>
             <form>
-              <label className="mobile">Mobile number</label>
+              <label className="mobile">Sign In</label>
 
               <Box className="mobilefield">
                 <div className="country">
@@ -47,21 +47,26 @@ function Login() {
               </ColorButton>
 
               <div className="otheropt">
-                <div className="option">Or, Use one of the following options</div>
+                <div className="option">
+                  Or, Use one of the following options
+                </div>
                 <div className="optionbtn">
-                <div className="email">
-                 <img className="emailimg" src="../email.png" alt="" />
-                 <div className="emailtxt">Email</div>
-                </div>
-                <div className="email">
-                 <img className="emailimg" src="../facebooklogin.png" alt="" />
-                 <div className="emailtxt">Facebook</div>
-                </div>
-                <div className="email">
-                 <img className="emailimg" src="../googlelogin.png" alt="" />
-                 <div className="emailtxt">Google</div>
-                </div>
-
+                  <div className="email">
+                    <img className="emailimg" src="../email.png" alt="" />
+                    <div className="emailtxt">Email</div>
+                  </div>
+                  <div className="email">
+                    <img
+                      className="emailimg"
+                      src="../facebooklogin.png"
+                      alt=""
+                    />
+                    <div className="emailtxt">Facebook</div>
+                  </div>
+                  <div className="email">
+                    <img className="emailimg" src="../googlelogin.png" alt="" />
+                    <div className="emailtxt">Google</div>
+                  </div>
                 </div>
               </div>
             </form>
