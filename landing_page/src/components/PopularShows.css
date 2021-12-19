@@ -1,0 +1,136 @@
+.popular_main_div_p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    background: #35393F;
+    /* position: absolute; */
+    /* left: 3%;
+top: 40%; */
+    /* width: 100%; */
+    height: 257px;
+    margin-top: 0%;
+    margin-left: 30%;
+    width: 850px;
+}
+
+.popular_main_div2_p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    background: #35393F;
+    /* position: absolute;
+
+left: 3%;
+top: 80%; */
+    /* width: 100%; */
+    width: 850px;
+    height: 257px;
+    margin-top: 0%;
+    margin-left: 30%;
+}
+
+.popular_shows_text_p {
+    position: static;
+    /* 
+left: 0px;
+top: 0px; */
+    width: 100%;
+    height: 29px;
+    /* H3 */
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    /* text/day */
+    color: #FFFFFF;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+    margin-left: -52%;
+}
+
+.popularList_div_p {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    /* 
+position: static;
+height: 103px;
+left: 0px;
+top: 45px; */
+    width: 100%;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
+    margin-left: -53%;
+}
+
+.popluarShows_tile_p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    /* position: static;
+
+left: 0px;
+top: 0px; */
+    cursor: pointer;
+    width: 19%;
+    height: 12%;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 6px;
+}
+
+.popluarShows_tile_p>img {
+    /* position: static;
+
+left: 0px;
+top: 0px; */
+    width: 134px;
+    height: 113px;
+    border-radius: 8px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+
+.popluarShows_tile_p>p {
+    position: static;
+    /* 
+    left: 0px;
+    top: 84px;
+     */
+    /* Body */
+    width: 134px;
+    height: 19px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    /* text/day */
+    color: #FFFFFF;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+}

@@ -1,0 +1,152 @@
+.episode_div_p {
+    margin-top: 2%;
+    margin-left: 0%;
+}
+
+.Episode_List_div {
+    display: flex;
+    flex-direction: row;
+    /*
+align-items: flex-start; */
+    padding: 0px;
+    width: 905px;
+    height: 94px;
+    left: 3%;
+    top: 10%;
+    margin: 3%;
+}
+
+.ep_div {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    padding: 0px;
+    position: static;
+    width: 107px;
+    height: 43px;
+    left: 0px;
+    top: 0px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.ep_duration_div_p {
+    /* position: static;
+
+left: 0px;
+top: 26px; */
+    width: 128%;
+    height: 17px;
+    /* Caption */
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    /* text/grey */
+    color: #B7B8B7;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: -3px 0px;
+}
+
+.ep_name_p {
+    position: static;
+    /* 
+left: 0px;
+top: 0px; */
+    width: 200px;
+    height: 22px;
+    /* H4 */
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    /* text/day */
+    color: #FFFFFF;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+
+.episode_container_p {
+    margin-top: -1%;
+    margin-left: -2%
+}
+
+.Episode_List_div>img {
+    /* position: static;
+
+left: 3%;
+top: 5%; */
+    width: 162px;
+    height: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 2px 12px;
+}
+
+.season_tag_p {
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    padding: 10px 18px;
+    /* position: absolute;
+    
+    left: 3%;
+    top: 5%; */
+    width: 92px;
+    height: 37px;
+    /* secondary/dark ash */
+    background: #1A1D1E;
+    /* secondary/ash */
+    color: white;
+    border: 2px solid #35393F;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-image: url(../media/season1.svg);
+    margin-left: 2%;
+}
+
+.ep_description_div_p {
+    /* position: static;
+
+left: 0px;
+top: 53px; */
+    width: 731px;
+    height: 38px;
+    /* Body */
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    /* text/day */
+    color: #FFFFFF;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+}

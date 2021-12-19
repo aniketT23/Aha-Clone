@@ -1,0 +1,119 @@
+.social-icons {
+  height: 31.33px;
+  width: 32px;
+  margin: 5px 0 0 10px;
+  cursor: pointer;
+}
+.boxfooter {
+  display: inline-flex;
+  width: 100%;
+}
+.watchmovie {
+  display: flex;
+  width: 160px;
+  flex-direction: column;
+  font-family: proximaNova;
+  font-style: normal;
+  margin-top: 73px;
+  margin-right: 50px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+}
+.moviename {
+  /* text-decoration: none;
+  color: #696971;
+  padding-top: 10px; */
+  font-family: proximaNova;
+  font-style: normal;
+  color: #96969d;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 26px;
+  padding-top: 10px;
+}
+.footerapp {
+  padding: 18px;
+}
+.footerlogo {
+  height: 100px;
+  width: 200px;
+  margin: 50px 180px 26px 52px;
+  cursor: pointer;
+}
+.textfooter {
+ 
+  font-family: proximaNova;
+  font-style: normal;
+  margin: 0 0 8px 50px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 14px;
+}
+.textfooter>a{
+   text-decoration: none;
+   color: #fff;
+}
+.socialmedia {
+  display: flex;
+  margin-left: 50px;
+  flex-flow: row wrap;
+}
+.appcontain {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.appbtn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 8px 0 32px 50px;
+}
+.playstore {
+  height: 41px;
+  width: 104px;
+  margin-right: 6.1px;
+  cursor: pointer;
+}
+.footerline {
+  opacity: 0.3;
+  border: 1px solid #fff;
+}
+
+.footermetadata {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 68px;
+  width: 100%;
+}
+.metadataleft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: proximaNova;
+  font-style: normal;
+  margin-left: 65px;
+  /* margin-right: var(--meta-data-left-container-margin, 0); */
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+}
+.metadataright {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 300px;
+}
+.metadatarightcontainer {
+  display: contents;
+  text-decoration: none;
+  color: #958a83;
+}
+.firstflight {
+  filter: brightness(0.7);
+  width: 90px;
+  cursor: pointer;
+  margin-bottom: -8px;
+}
