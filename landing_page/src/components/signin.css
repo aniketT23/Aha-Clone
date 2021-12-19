@@ -1,0 +1,236 @@
+.backgroundlogin {
+  position: relative;
+  width: 1040px;
+  height: 700px;
+  background: linear-gradient(180deg, #3a3a3a 0%, #212226 100%);
+  margin: auto;
+}
+.nav > img {
+  position: absolute;
+  width: 56px;
+  height: 30px;
+  left: 25px;
+  top: 10px;
+}
+.loginbox {
+  position: absolute;
+  width: 552px;
+  height: 528px;
+  left: 278px;
+  top: 100px;
+  background: #1a1d1e;
+  border: 2px solid #35393f;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.leftarrow {
+  position: absolute;
+  left: 0%;
+  right: 11.11%;
+  top: 0%;
+  bottom: 0%;
+  color: #ffffff;
+  border-radius: 1px;
+}
+.lets {
+  position: absolute;
+  width: 300px;
+  height: 64px;
+  left: 110px;
+  top: 0px;
+
+  /* H1 */
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  /* text/day */
+
+  color: #ffffff;
+}
+.loginboxnavbar {
+  position: relative;
+  left: 82px;
+  top: 60px;
+}
+.mobile {
+  position: absolute;
+  width: 125px;
+  height: 22px;
+  left: 112px;
+  top: 162px;
+
+  /* H4 */
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* text/day */
+
+  color: #ffffff;
+}
+.mobilefield {
+  position: absolute;
+  width: 328px;
+  height: 56px;
+  left: 112px;
+  top: 206px;
+  background: linear-gradient(180deg, #3b3f44 0%, #2e3138 100%);
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+/* TextField {
+  color: #fff;
+} */
+
+.line {
+  position: relative;
+  width: 33px;
+  height: 0px;
+  left: 55px;
+  top: 0px;
+  border: 0.5px solid #b7b8b7;
+  transform: rotate(90deg);
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 0px 16px;
+}
+.mobilenum {
+  position: static;
+  width: 217px;
+  height: 19px;
+  left: 101px;
+  top: -28.5px;
+  /* border: */
+
+  /* Body */
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 1;
+  margin: 0px 16px;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 132px;
+
+  position: absolute;
+  width: 324px;
+  height: 51px;
+  left: 114px;
+  top: 276px;
+
+  /* gradients/Orange bliss */
+
+  background: linear-gradient(180deg, #fe6c2d 0%, #b71b0a 100%);
+  border-radius: 34px;
+}
+.option {
+  position: absolute;
+  /* width: 256px; */
+  height: 19px;
+  left: 150px;
+  top: 350px;
+  color: #fff;
+}
+.optionbtn {
+  width: 328px;
+  margin: 357px auto auto auto;
+  display: flex;
+  justify-content: space-between;
+}
+.email {
+  position: static;
+  width: 105px;
+  height: 46px;
+  left: 0px;
+  top: 0px;
+  background: #1a1d1e;
+  border: 1px solid #909196;
+  box-sizing: border-box;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+.emailimg {
+  position: relative;
+  top: 21%;
+  left: 17%;
+  right: 19%;
+  bottom: 28%;
+}
+.emailtxt {
+  position: relative;
+  width: 29px;
+  height: 15px;
+  left: 45px;
+  top: -14px;
+
+  /* Caption 2 */
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* text/day */
+
+  color: #ffffff;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 6px;
+}
+
+.country {
+  position: relative;
+  top: 15px;
+  left: 5px;
+}
+
+.country >span{
+    position: relative;
+    left: 14px;
+    bottom: 5px;
+}
