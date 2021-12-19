@@ -1,17 +1,10 @@
 import { useTheme } from "@mui/material/styles";
 import { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
-import MobileStepper from "@mui/material/MobileStepper";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
-import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
-import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
 import "./ahaOrignal.css";
-import { maxHeight } from "@mui/system";
+
 import styled from "styled-components";
-import Carousel from "react-elastic-carousel";
+
 import axios from "axios";
 
 const AhaDiv = styled.div`
@@ -45,9 +38,7 @@ export const Top10 = ({ heading }) => {
 
   const AhaO = async () => {
     try {
-      const { data } = await axios.get(
-        "http://localhost:2233/aha/ahaOriginals"
-      );
+      const { data } = await axios.get("http://localhost:2233/aha/top10");
       setImage(data);
       console.log(data);
     } catch (err) {

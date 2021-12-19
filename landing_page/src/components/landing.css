@@ -32,6 +32,11 @@ body {
     background-color: rgb(34, 33, 36);
 }
 
+.go {
+    border: 1px solid blue;
+    background-color: transparent;
+}
+
 
 /* #rightBTN {
     position: relative;
