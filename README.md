@@ -1,6 +1,6 @@
 # Aha Clone
 
- <img src="https://raw.githubusercontent.com/masai-course/priya_fw11_287/9c77a3ee496950b8b801ed49775ff63c03f9229d/unit-5/sprint-5/day-1/aha_logo1.svg?token=AVEKVYQQJVD77KJNEH4T4CTBX42WQ" height="100" alt="aha-logo">
+ <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Aha_OTT_Logo.svg/400px-Aha_OTT_Logo.svg.png" height="100" alt="aha-logo">
 
  ## Clone of Website aha.video
  <h4>aha.video Brings You Up The Most Amazing Telugu Shows and Movies With 100% Original Content. Subscribe Now To Watch Your Other Favorite Shows Without Any Interruption. aha Originals Streaming.</h4>
@@ -31,16 +31,16 @@ To start server please clone [THIS](https://github.com/thakoorchandan/Aha-Backen
 
 ## Screenshots 
 ### Landing Page
-![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/watchPage/ScreenShots/Landing.jpeg?raw=true)
+![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/screenshots/landing.jpeg?raw=true)
 
 ### LogIn Page
 
-![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/watchPage/ScreenShots/Login.jpeg?raw=true)
+![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/screenshots/signup.jpeg?raw=true)
 ### Watch Page
-![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/watchPage/ScreenShots/Watchpage.jpeg?raw=true)
+![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/screenshots/watchpage.jpeg?raw=true)
 ### Watchlist Page
-![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/watchPage/ScreenShots/watchlist.jpeg?raw=true)
+![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/screenshots/watchlist.jpeg?raw=true)
 ### Video Page
-![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/watchPage/ScreenShots/Player.jpeg?raw=true)
+![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/screenshots/player.jpeg?raw=true)
 
 ### For live demo : [Demo]()
