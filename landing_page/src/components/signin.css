@@ -38,15 +38,15 @@
   position: absolute;
   width: 300px;
   height: 64px;
-  left: 110px;
-  top: 0px;
+  left: 10px;
+  top: -105px;
 
   /* H1 */
 
   font-family: Proxima Nova;
   font-style: normal;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 35px;
   display: flex;
   align-items: center;
@@ -55,6 +55,11 @@
   /* text/day */
 
   color: #ffffff;
+}
+.lets > p {
+  font-size: 30px;
+  line-height: 35px;
+  
 }
 .loginboxnavbar {
   position: relative;
@@ -229,8 +234,8 @@
   left: 5px;
 }
 
-.country >span{
-    position: relative;
-    left: 14px;
-    bottom: 5px;
+.country > span {
+  position: relative;
+  left: 14px;
+  bottom: 5px;
 }

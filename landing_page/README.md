@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Aha Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ <img src="https://raw.githubusercontent.com/masai-course/priya_fw11_287/9c77a3ee496950b8b801ed49775ff63c03f9229d/unit-5/sprint-5/day-1/aha_logo1.svg?token=AVEKVYQQJVD77KJNEH4T4CTBX42WQ" height="100" alt="aha-logo">
 
-## Available Scripts
+ ## Clone of Website aha.video
+ <h4>aha.video Brings You Up The Most Amazing Telugu Shows and Movies With 100% Original Content. Subscribe Now To Watch Your Other Favorite Shows Without Any Interruption. aha Originals Streaming.</h4>
 
-In the project directory, you can run:
+ ## Authors
+ - [@aniketT23](https://github.com/aniketT23)
+ - [@Priya31g](https://github.com/Priya31g)
+ - [@thakoorchandan](https://github.com/thakoorchandan)
+ - [@AbhishekRanjan8051](https://github.com/AbhishekRanjan8051)
 
-### `npm start`
+ ## Design Team Students 
+ - Manendra Kondapalli
+ - Paveesha
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Acknowledgements
+ To start the server run `npm start` in your terminal.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To start server please clone [THIS](https://github.com/thakoorchandan/Aha-Backend-) and run `npm install` and npm `run server`
 
-### `npm test`
+## Features
+- User can signin and signup.
+- User can watch the shows based on categories e.g. action, romance, thriller etc.
+- User can watchlist any shows or movies and watch later.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
+- `Client` : `React`,`Redux`,`Material ui`,`JavaScript`, `HTML`,`CSS`
+- `Server` : `NodeJS`,`Express`,`MongoDB`
 
-### `npm run build`
+## Screenshots 
+### Landing Page
+![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/watchPage/ScreenShots/Landing.jpeg?raw=true)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### LogIn Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/watchPage/ScreenShots/Login.jpeg?raw=true)
+### Watch Page
+![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/watchPage/ScreenShots/Watchpage.jpeg?raw=true)
+### Watchlist Page
+![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/watchPage/ScreenShots/watchlist.jpeg?raw=true)
+### Video Page
+![img](https://github.com/aniketT23/Aha-Clone/blob/Priya-Kumari/watchPage/ScreenShots/Player.jpeg?raw=true)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### For live demo : [Demo]()
