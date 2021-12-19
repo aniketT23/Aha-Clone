@@ -38,6 +38,9 @@ function App() {
         <Route path="/player">
           <Player />
         </Route>
+        <Route path="/login">
+          <Login></Login>
+        </Route>
       </Switch>
 
       <Footer />

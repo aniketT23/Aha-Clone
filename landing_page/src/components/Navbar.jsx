@@ -8,9 +8,11 @@ import PersonIcon from "@mui/icons-material/Person";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import { positions } from "@mui/system";
+import { useHistory } from "react-router-dom";
 
 function Navbar() {
   const offset = 70;
+  const history = useHistory();
 
   const [navbar, setNavbar] = React.useState(false);
   const ColorButton = styled(Button)(({ theme }) => ({
@@ -60,7 +62,14 @@ function Navbar() {
           </ColorButton>
           <div>
             <PersonIcon />
-            <Button variant="text">Sign In</Button>
+            <Button
+              onClick={() => {
+                history.push("/login");
+              }}
+              variant="text"
+            >
+              Sign In
+            </Button>
           </div>
         </div>
       </nav>
