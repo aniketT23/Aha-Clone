@@ -7,11 +7,11 @@ import { purple, red } from "@mui/material/colors";
 import PersonIcon from "@mui/icons-material/Person";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-// import { positions } from "@mui/system";
+import { positions } from "@mui/system";
 import { useHistory } from "react-router-dom";
 
 function Navbar() {
-  // const offset = 70;
+  const offset = 70;
   const history = useHistory();
 
    const [color, setColor] = React.useState(false);
@@ -25,7 +25,7 @@ function Navbar() {
   }));
 
    const changeBackground = () => {
-    //  console.log(window.scrollY);
+     console.log(window.scrollY);
      if (window.scrollY >= 75) {
        setColor(true);
      } else {

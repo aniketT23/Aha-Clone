@@ -1,4 +1,4 @@
-.boxmodal {
+.modalbox {
   position: relative;
   margin-left: 500px;
   background: linear-gradient(180deg, #3a3a3a 0%, #212226 100%);
@@ -10,7 +10,7 @@
   transition: 0.2s;
 }
 
-.boxmodal:hover {
+.modalbox:hover {
   box-shadow: 0 4px 8px 0 rgba(190, 95, 6, 0.233),
     0 6px 20px 0 rgba(161, 77, 8, 0.226);
 }
@@ -51,13 +51,17 @@ select {
   font-weight: 650;
 }
 
-.loginButton {
+.signupButton {
   margin: auto;
   background: linear-gradient(180deg, #fe6c2d 0%, #b71b0a 100%);
   border-radius: 34px;
   color: white !important;
   font-size: larger !important;
   width: 50% !important;
+}
+
+.signupButton:hover {
+  cursor: pointer;
 }
 
 .SignIn_footer {

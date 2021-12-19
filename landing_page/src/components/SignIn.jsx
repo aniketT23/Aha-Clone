@@ -1,74 +1,66 @@
-import React from "react";
-import Box from "@mui/material/Box";
-import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
-import TextField from "@mui/material/TextField";
+import { useState } from "react";
 import "./signin.css";
-import { styled } from "@mui/material/styles";
-import Button from "@mui/material/Button";
-import { purple } from "@mui/material/colors";
+import axios from "axios";
 
-const ColorButton = styled(Button)(({ theme }) => ({
-  color: theme.palette.getContrastText(purple[500]),
-  backgroundColor: purple[500],
-  borderRadius: 34,
-  "&:hover": {
-    backgroundColor: purple[700],
-  },
-}));
-function Login() {
+const userData = {
+  email: "",
+  password: "",
+};
+
+function SignIn() {
+  const [signInformData, setsignInFormData] = useState(userData);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setsignInFormData({ ...signInformData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const userCredentials = await axios
+        .post("http://localhost:2233/signin", signInformData)
+        .then((res) => {
+          if (res.data.token) {
+            localStorage.setItem("token", res.data.token);
+            localStorage.setItem("username", res.data.user.first_name);
+            alert("You are successfully logged in, Click Ok to Continue");
+            window.location = "/";
+          }
+        });
+    } catch (err) {
+      console.log("error :", err);
+      alert("Something went wrong");
+    }
+  };
+
   return (
-    <div>
-      <div className="backgroundlogin">
-        <nav className="nav">
-          <img src="../signinaha.png" alt="" />
-        </nav>
-        <Box className="loginbox">
-          <div className="loginboxnavbar">
-            <KeyboardArrowLeftIcon className="leftarrow" />
-            <span className="lets">
-              <p>LET'S GET Started</p>
-            </span>
-          </div>
-          <Box>
-            <form>
-              <label className="mobile">Mobile number</label>
+    <>
+      <div className="boxmodal">
+        <div className="loginContainer">
+          <form onSubmit={(e) => handleSubmit(e)}>
+            <input
+              onChange={handleChange}
+              required={true}
+              name="email"
+              placeholder="Email"
+            />
 
-              <Box className="mobilefield">
-                <div className="country">
-                  <img src="../india.png" alt="" />
-                  <span>+91</span>
-                </div>
+            <input
+              type="password"
+              name="password"
+              onChange={handleChange}
+              required={true}
+              minLength="8"
+              placeholder="Password"
+            />
 
-                <div className="line"></div>
-                <TextField className="mobilenum" />
-              </Box>
-              <ColorButton className="btn" variant="contained">
-                Contained
-              </ColorButton>
-
-              <div className="otheropt">
-                <div className="option">Or, Use one of the following options</div>
-                <div className="optionbtn">
-                <div className="email">
-                 <img className="emailimg" src="../email.png" alt="" />
-                 <div className="emailtxt">Email</div>
-                </div>
-                <div className="email">
-                 <img className="emailimg" src="../facebooklogin.png" alt="" />
-                 <div className="emailtxt">Facebook</div>
-                </div>
-                <div className="email">
-                 <img className="emailimg" src="../googlelogin.png" alt="" />
-                 <div className="emailtxt">Google</div>
-                </div>
-
-                </div>
-              </div>
-            </form>
-          </Box>
-        </Box>
+            <input className="loginButton" type="submit" value="Login" />
+          </form>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
-export default Login;
+
+export default SignIn;
