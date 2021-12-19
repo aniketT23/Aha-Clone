@@ -8,7 +8,7 @@ function Cast ({id}){
     const [cast,setCast] = useState([]);
     const getCast = async()=>{
          const {data} = await axios.get(`http://localhost:2233/aha/most_watched/${id}`);
-         //console.log(data.cast);
+         console.log(data);
          setCast(data.cast)
     }
     useEffect(()=>{
@@ -17,7 +17,7 @@ function Cast ({id}){
 return (
    
         <div className="cast_image_p">
-                            {cast.map((el,i)=>{
+                            {cast?.map((el,i)=>{
                                 return <div className="cast_tile_p" key={i}>
                                         <img className="img" src = {el.pic} alt="pic" />
                                         <p className="cast_name_p">
