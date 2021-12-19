@@ -9,7 +9,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import "./navbar.css";
 
 function Navbar() {
-  const [navbar, setNavbar] = React.useState(false);
+  const [color, setColor] = React.useState(false);
   const ColorButton = styled(Button)(({ theme }) => ({
     color: theme.palette.getContrastText(purple[500]),
     backgroundColor: red[500],
@@ -22,9 +22,9 @@ function Navbar() {
   const changeBackground = () => {
     console.log(window.scrollY);
     if(window.scrollY>=75 ){
-      setNavbar(true);
+      setColor(true);
     }else{
-      setNavbar(false);
+      setColor(false);
     }
   };
 
@@ -32,7 +32,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav className={navbar?'navbar active':'navbar'}>
+      <nav className={color?'navbar scroll':'navbar'}>
         <div className="left">
           <img className="logo" src="../aha_logo1.svg" alt="aha_logo" />
 
