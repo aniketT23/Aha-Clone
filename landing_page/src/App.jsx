@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import { LandingPage } from "./components/landingPage";
 import Footer from "./components/Footer";
@@ -35,8 +35,9 @@ function App() {
         <Route path="/episodes">
           <Episodes />
         </Route>
+
         <Route path="/player">
-          <Player />
+          <Player  />
         </Route>
         <Route path="/login">
           <Login></Login>
