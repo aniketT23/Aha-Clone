@@ -10,10 +10,6 @@ function Footer() {
         sx={{
           backgroundColor: "#222123",
           color: "#fff",
-          "&:hover": {
-            backgroundColor: "primary.main",
-            opacity: [0.9, 0.8, 0.7],
-          },
         }}
       >
         <div className="boxfooter">
