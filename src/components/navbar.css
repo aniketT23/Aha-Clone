@@ -1,10 +1,10 @@
 .navbar {
-  /* position: fixed; */
+  position: relative;
   /* background: transparent; */
   display: grid;
   grid-template-columns: auto auto;
   width: 100%;
-  z-index: 8;
+  z-index: 999;
   height: 75 px;
   top: 0;
   background-color: #154fc4;
