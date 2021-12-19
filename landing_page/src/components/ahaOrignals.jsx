@@ -11,7 +11,7 @@ import { maxHeight } from "@mui/system";
 import styled from "styled-components";
 
 import axios from "axios";
-import { Link, useHistory } from "react-router-dom";
+// import { Link, useHistory } from "react-router-dom";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -40,7 +40,6 @@ export const AhaOrignal = ({ heading }) => {
   const theme = useTheme();
   const [activeStep, setActiveStep] = useState(0);
   const [image, setImage] = useState();
-  const history = useHistory();
 
   console.log("active", activeStep);
 
@@ -92,13 +91,7 @@ export const AhaOrignal = ({ heading }) => {
           )}
         </Button>
         {image?.map((step, index) => (
-          <div
-            key={step.id}
-            className="demo"
-            onClick={() => {
-              history.push({ pathname: "/watchpage", state: { id: step.id } });
-            }}
-          >
+          <div key={step.id} className="demo">
             {Math.abs(activeStep - index) <= 4 ? (
               <>
                 <Box

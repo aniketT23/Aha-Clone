@@ -66,6 +66,12 @@ const images = [
   },
 ];
 
+const styles = {
+  dots: {
+    color: "blue",
+  },
+};
+
 const BtnAnimation = styled.div`
   min-width: 100%;
   display: flex;
@@ -163,6 +169,7 @@ function Landing() {
         className="go"
         steps={maxSteps}
         position="static"
+        variant="dots"
         activeStep={activeStep}
       />
     </Box>

@@ -10,7 +10,7 @@ const AhaDiv = styled.div`
   gap: 1%;
   position: relative;
   margin:auto;
-  max-width:97%;
+  max-width:96%;
 
   &:hover #rightBTN {
     display: block;
@@ -36,7 +36,7 @@ export const Upcoming = ({ heading }) => {
 
   const AhaO = async () => {
     try {
-      const { data } = await axios.get("http://localhost:2233/aha/upcoming");
+      const { data } = await axios.get("http://localhost:2233/aha/crime");
       setImage(data);
       console.log(data);
     } catch (err) {

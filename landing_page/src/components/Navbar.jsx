@@ -37,7 +37,10 @@ function Navbar() {
     <div>
       <nav className={navbar ? "navbar active" : "navbar"}>
         <div className="left">
-          <img className="logo" src="../aha_logo1.svg" alt="aha_logo" />
+          <Link to="/" className="lNav">
+            {" "}
+            <img className="logo" src="../aha_logo1.svg" alt="aha_logo" />
+          </Link>
 
           <ul style={{ listStyle: "none", display: "inline-flex" }}>
             <Link to="/" className="lNav">

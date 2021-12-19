@@ -18,10 +18,11 @@ export const LandingPage = () => {
     <>
       <Landing></Landing>
       <Handpicked heading="Handpicked"></Handpicked>
+      <MostWatched heading="Most Watched"></MostWatched>
       <NewRelease heading="New Release"></NewRelease>
       <AhaOrignal heading="Aha Orignals"></AhaOrignal>
       <Top10 heading="Top10 Today"></Top10>
-      <MostWatched heading="Most Watched"></MostWatched>
+
       <Upcoming heading="Upcoming on Aha"></Upcoming>
       <NewAdd heading="Newly Added"></NewAdd>
       <Geners heading="Geners"></Geners>

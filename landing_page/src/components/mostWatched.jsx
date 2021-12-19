@@ -4,13 +4,14 @@ import Box from "@mui/material/Box";
 import "./ahaOrignal.css";
 import styled from "styled-components";
 import axios from "axios";
+import { Link, useHistory } from "react-router-dom";
 
 const AhaDiv = styled.div`
   display: flex;
   gap: 1%;
   position: relative;
   margin:auto;
-  max-width:97%;
+  max-width:96%;
 
   &:hover #rightBTN {
     display: block;
@@ -29,6 +30,7 @@ export const MostWatched = ({ heading }) => {
   const theme = useTheme();
   const [activeStep, setActiveStep] = useState(0);
   const [image, setImage] = useState();
+  const history = useHistory();
 
   useEffect(async () => {
     AhaO();
@@ -51,7 +53,12 @@ export const MostWatched = ({ heading }) => {
       <h1 style={{ color: "#fff" }}>{heading}</h1>
       <AhaDiv>
         {image?.map((step, index) => (
-          <div key={step.id}>
+          <div
+            key={step._id}
+            onClick={() => {
+              history.push({ pathname: "/watchpage", state: { id: step._id } });
+            }}
+          >
             {Math.abs(activeStep - index) <= 10 ? (
               <>
                 <Box

@@ -1,12 +1,11 @@
 .MuiMobileStepper-dot {
     transform: scale(1.15);
-    background-color: grey;
     padding: 0%;
 }
 
 .MuiMobileStepper-dotActive {
-    border: 1px solid red;
-    background-color: grey;
+    background-color: white;
+    border: 1px red;
 }
 
 .MuiMobileStepper-root {

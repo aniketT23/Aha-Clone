@@ -1,0 +1,352 @@
+.main_div_p {
+    /* position: absolute; */
+    width: 100%;
+    height: 480px;
+    /* left: 0px; */
+    /* top: 0px; */
+}
+
+.info_cont_p {
+    /* position: absolute; */
+    width: 720px;
+    height: 480px;
+    /* left: 0px; */
+    /* top: 0px; */
+    margin-top: -9%;
+    background: linear-gradient(85.45deg, rgba(0, 0, 0, 0.84) 19.15%, rgba(24, 22, 22, 0.52) 54.73%, rgba(103, 103, 103, 0) 96.31%);
+}
+
+.premiuim_p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    /* position: static; */
+    width: 92px;
+    height: 29px;
+    /* left: 0px;
+    top: 0px; */
+    /* secondary/dark ash */
+    background: #1A1D1E;
+    /* secondary/ash */
+    border: 2px solid #35393F;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 12px;
+    background: url(../media/premiumtag.svg);
+}
+
+.rating_tag_p {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 12px;
+    /* 
+position: static;
+
+left: 104px;
+top: 0.5px; */
+    width: 42px;
+    height: 28px;
+    /* secondary/dark ash */
+    background: #1A1D1E;
+    /* secondary/ash */
+    border: 2px solid #35393F;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 12px;
+    background: url(../media/rating\ tag.svg);
+}
+
+.tag_div_p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    /* 
+position: static;
+
+left: 0px;
+top: 0px; */
+    width: 193px;
+    height: 29px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 18px 100px;
+    margin-top: 124px;
+}
+
+.tag_div_p>img {
+    margin-top: 83%;
+}
+
+.age_tag_p {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 12px;
+    /* position: static;
+
+left: 158px;
+top: 0.5px; */
+    width: 35px;
+    height: 28px;
+    /* secondary/dark ash */
+    background: #1A1D1E;
+    /* secondary/ash */
+    border: 2px solid #35393F;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 12px;
+    background: url(../media/age\ tag.svg);
+}
+
+.title_p {
+    /* position: static;
+
+left: 47px;
+top: 47px; */
+    width: 177px;
+    height: 50px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-top: 13%;
+    margin-left: 101px;
+}
+
+.metaData_p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    /* position: static;
+
+left: 0px;
+top: 109px; */
+    width: 375px;
+    height: 19px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 12px 0px;
+    margin-left: 94px;
+}
+
+.description_title_p {
+    /* position: static;
+
+left: 0px;
+top: 146px; */
+    width: 577px;
+    height: 38px;
+    /* Body */
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: left;
+    text-align: left;
+    /* text/day */
+    color: #FFFFFF;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 14px 0px;
+    margin-left: 86px;
+}
+
+.button_box_1P {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    /* position: static;
+
+left: 0px;
+top: 202px; */
+    width: 338px;
+    height: 38px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 38px 0px;
+    margin-left: 78px;
+}
+
+.triler_button_p {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 24px;
+    /* position: relative; */
+    width: 117px;
+    height: 37px;
+    /* secondary/dark ash */
+    background: #1A1D1E;
+    /* secondary/ash */
+    border: 1px solid #35393F;
+    box-sizing: border-box;
+    border-radius: 34px;
+    color: #FFFFFF;
+}
+
+.strt_p {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 24px;
+    border: none;
+    /* position: static;
+
+left: 135px;
+top: 0px; */
+    width: 166px;
+    height: 38px;
+    /* gradients/Orange bliss */
+    background: linear-gradient(180deg, #FE6C2D 0%, #B71B0A 100%);
+    border-radius: 34px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 18px;
+    color: #FFFFFF;
+    background: url(../media/Startwatcing.svg);
+}
+
+.action_p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    /* position: static;
+
+left: 0px;
+top: 264px; */
+    width: 300px;
+    height: 58px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: -20px 90px;
+}
+
+.watchlist_p {
+    /* position: static;
+   
+    left: 0px;
+    top: 0px;
+     */
+    width: 42px;
+    height: 42px;
+    /* Inside Auto Layout */
+    border: 0px solid #35393F;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 28px;
+    background: url("../media/watchlist.svg");
+}
+
+.share_p {
+    /* position: static;
+
+left: 70px;
+top: 0px; */
+    width: 42px;
+    height: 42px;
+    /* Inside Auto Layout */
+    border: 0px solid #35393F;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: -42px 92px;
+    background: url("../media/share.svg");
+}
+
+.text_div_p {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    /* 
+position: static;
+
+left: 0px;
+top: 46px; */
+    width: 106px;
+    height: 12px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 9px 101px;
+    margin-left: 15%;
+}
+
+.watchlist_p_text {
+    position: static;
+    /* 
+left:10%;
+top: 0px; */
+    /* width: 65%; */
+    height: 12px;
+    /* Button 2 (tag) */
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* text/grey */
+    color: #B7B8B7;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 12px;
+}
+
+.delete_watchlist_button_p {
+    /* position: static;
+
+left: 0px;
+top: 0px; */
+    width: 42px;
+    height: 42px;
+    /* Inside Auto Layout */
+    border: none;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 28px;
+    background: url(../media/delete_watchlist.svg);
+}
