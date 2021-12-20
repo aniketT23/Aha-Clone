@@ -9,7 +9,7 @@ function PopularShows({id,castCheck}){
       
         try{
            
-            const {data} = await axios.get(`http://localhost:2233/aha/most_watched`);
+            const {data} = await axios.get(`https://mighty-dawn-13827.herokuapp.com/aha/most_watched`);
             let temp =[]
                 data.map((el,i)=>{
                     if(i<=6){

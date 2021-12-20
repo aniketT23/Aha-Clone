@@ -11,7 +11,7 @@ export const Episodes = ({ id }) => {
   const data_getting = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:2233/aha/most_watched/${id}`
+        `https://mighty-dawn-13827.herokuapp.com/aha/most_watched/${id}`
       );
 
       //console.log(data.episodes);

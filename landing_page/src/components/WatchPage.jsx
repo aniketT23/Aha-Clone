@@ -20,7 +20,7 @@ export const WatchPage =()=>{
      
         try{
            
-            const {data} = await axios.get(`http://localhost:2233/aha/most_watched/${id}`);
+            const {data} = await axios.get(`https://mighty-dawn-13827.herokuapp.com/aha/most_watched/${id}`);
        
            if(data.categories==="shows"){
                 setShows(true);

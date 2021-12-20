@@ -13,11 +13,11 @@ export const MainCont = ({ d_id }) => {
     if (watchListed === null) checking_id();
     try {
       const { data } = await axios.get(
-        `http://localhost:2233/aha/most_watched/${d_id}`
+        `https://mighty-dawn-13827.herokuapp.com/aha/most_watched/${d_id}`
       );
 
       setdata(data);
-      setId(data.id);
+      setId(data._id);
     } catch (err) {
       alert("Somthing went wrong");
     }
@@ -47,15 +47,20 @@ export const MainCont = ({ d_id }) => {
     try {
       const local_data = JSON.parse(localStorage.getItem("watchlist"));
       const d2 = local_data?.map((el) => {
-        if (el._id !== data._id) {
+         if (el._id !== data._id&& el!== null) {
           console.log(el._id);
           return el;
         }
       });
       console.log(d2);
-      if (d2[0] === undefined)
+      const d1 = d2?.map((el)=>{
+        if(el){
+          return el
+        }
+      })
+      if (d1[0] === undefined)
         localStorage.setItem("watchlist", JSON.stringify([]));
-      else localStorage.setItem("watchlist", JSON.stringify(d2));
+      else localStorage.setItem("watchlist", JSON.stringify(d1));
       setWatchListed(false);
     } catch (err) {
       alert("Somthing went wrong");

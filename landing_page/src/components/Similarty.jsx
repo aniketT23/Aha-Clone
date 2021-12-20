@@ -8,7 +8,7 @@ function Similarity({id,castCheck}){
       
         try{
            
-            const {data} = await axios.get(`http://localhost:2233/aha/most_watched/${id}`);
+            const {data} = await axios.get(`https://mighty-dawn-13827.herokuapp.com/aha/most_watched/${id}`);
                 let temp =[];
                 data.similar.map((el,i)=>{
                     if(i<=6){

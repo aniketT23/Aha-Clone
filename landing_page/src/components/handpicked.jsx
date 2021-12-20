@@ -57,7 +57,7 @@ export const Handpicked = ({ heading }) => {
 
   const AhaO = async () => {
     try {
-      const { data } = await axios.get("http://localhost:2233/aha/handpicked");
+      const { data } = await axios.get("https://mighty-dawn-13827.herokuapp.com/aha/handpicked");
       setImage(data);
       console.log(data);
     } catch (err) {
@@ -70,7 +70,7 @@ export const Handpicked = ({ heading }) => {
       <h1 style={{ color: "#fff" }}>{heading}</h1>
       <AhaDiv>
         {image?.map((step, index) => (
-          <div key={step.id}>
+          <div key={step._id}>
             {Math.abs(activeStep - index) <= 10 ? (
               <>
                 <Box

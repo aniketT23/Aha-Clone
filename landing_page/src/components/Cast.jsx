@@ -8,7 +8,7 @@ function Cast({ id }) {
   const [cast, setCast] = useState([]);
   const getCast = async () => {
     const { data } = await axios.get(
-      `http://localhost:2233/aha/most_watched/${id}`
+      `https://mighty-dawn-13827.herokuapp.com/aha/most_watched/${id}`
     );
     //console.log(data.cast);
     setCast(data.cast);

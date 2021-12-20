@@ -39,7 +39,7 @@ export const MostWatched = ({ heading }) => {
   const AhaO = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:2233/aha/most_watched"
+        "https://mighty-dawn-13827.herokuapp.com/aha/most_watched"
       );
       setImage(data);
       console.log(data);
