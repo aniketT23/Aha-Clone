@@ -1,14 +1,41 @@
 import { useHistory } from "react-router-dom"
 import { useEffect, useState } from "react";
 import "./WatchListPage.css"
-
+import axios from "axios";
 export const WatchList = ()=>{
     const history = useHistory();
     const [data,setdata] = useState([]);
+    const handle_single=async(id)=>{
+        try{
+           
+            const s= await axios.get(`https://mighty-dawn-13827.herokuapp.com/aha/watchlist/${id}`);
+           // console.log(s.data,"s")
+           let d= [...data,s.data[0]];
+           setdata(d)
+            return s.data[0];
+        }catch(err){
+            alert ( "something went wrong ")
+        }
+    }
     const checking_id =async ()=>{
-       const d2 = JSON.parse(localStorage.getItem("watchlist"))
-       console.log(d2)
-        setdata(d2)
+       try{
+        const id = await axios.get(`https://mighty-dawn-13827.herokuapp.com/aha/watchlist`);
+       // console.log(id.data)
+        const d = await id.data?.map((el)=>{
+         //   console.log(el.id)
+         if(!data.includes(el.id[0])){
+           const s =  handle_single(el.id[0]);
+           return s;
+        }
+          // console.log(s)
+         
+        })
+     // console.log(data)
+       // setdata(d)
+       }catch(err){
+        alert ( "something went wrong ")
+       }
+        
      }
      useEffect(()=>{
             checking_id()

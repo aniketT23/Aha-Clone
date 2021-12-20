@@ -8,60 +8,64 @@ export const MainCont = ({ d_id }) => {
   const history = useHistory();
   const [data, setdata] = useState([]);
   const [watchListed, setWatchListed] = useState(null);
-  const [id, setId] = useState(null);
+  const [w_id, setId] = useState(null);
+  
   const data_getting = async () => {
-    if (watchListed === null) checking_id();
+    
     try {
       const { data } = await axios.get(
         `https://mighty-dawn-13827.herokuapp.com/aha/most_watched/${d_id}`
       );
 
       setdata(data);
-      setId(data._id);
+
     } catch (err) {
       alert("Somthing went wrong");
     }
   };
   const watchListing = async () => {
     try {
-      const loal_data = JSON.parse(localStorage.getItem("watchlist"));
+      // const loal_data = JSON.parse(localStorage.getItem("watchlist"));
 
-      const d = [...loal_data, data];
-      localStorage.setItem("watchlist", JSON.stringify(d));
+      // const d = [...loal_data, data];
+      // localStorage.setItem("watchlist", JSON.stringify(d));
+      // setWatchListed(true);
+      // 
+      const payload = {
+        id:data._id
+      }
+      const watch = await axios.post("http://localhost:2233/aha/watchlist",payload)
+      
+     setId(watch.data._id);
+      // console.log(watch.data,watch.data._id);
       setWatchListed(true);
       alert(`You can watch this show any time now from your watchlist`);
     } catch (err) {
       alert("Somthing went wrong");
     }
   };
-  const checking_id = () => {
-    const d1 = JSON.parse(localStorage.getItem("watchlist"));
-    d1?.map((el) => {
-      if (el._id == data._id) {
-        setWatchListed(true);
-      }
-      return 0;
-    });
+  const checking_id = async() => {
+    try{
+      const id = await axios.get(`https://mighty-dawn-13827.herokuapp.com/aha/watchlist`)
+      // console.log(id);
+       id.data?.map((el)=>{
+         console.log(el)
+         if(el.id==data._id){
+          setWatchListed(true);
+         }
+       })
+    }catch(err){
+      alert("Somthing went wrong");
+    }
+    
   };
   const handlingDelete = async () => {
     try {
-      const local_data = JSON.parse(localStorage.getItem("watchlist"));
-      const d2 = local_data?.map((el) => {
-         if (el._id !== data._id&& el!== null) {
-          console.log(el._id);
-          return el;
-        }
-      });
-      console.log(d2);
-      const d1 = d2?.map((el)=>{
-        if(el){
-          return el
-        }
-      })
-      if (d1[0] === undefined)
-        localStorage.setItem("watchlist", JSON.stringify([]));
-      else localStorage.setItem("watchlist", JSON.stringify(d1));
-      setWatchListed(false);
+      
+     
+       const d = await axios.delete(`https://mighty-dawn-13827.herokuapp.com/aha/watchlist/${w_id}`);
+      // console.log(d)
+       setWatchListed(false);
     } catch (err) {
       alert("Somthing went wrong");
     }
