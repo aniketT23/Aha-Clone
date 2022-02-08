@@ -27,6 +27,7 @@ const AhaDiv = styled.div`
 `;
 
 export const MostWatched = ({ heading }) => {
+  const URL = process.env.REACT_APP_ABHI_BUS
   const theme = useTheme();
   const [activeStep, setActiveStep] = useState(0);
   const [image, setImage] = useState();
@@ -56,7 +57,8 @@ export const MostWatched = ({ heading }) => {
           <div
             key={step._id}
             onClick={() => {
-              history.push({ pathname: "/watchpage", state: { id: step._id } });
+              console.log(step.id)
+              history.push({ pathname: `/watchpage`, state: { id: step._id } });
             }}
           >
             {Math.abs(activeStep - index) <= 10 ? (

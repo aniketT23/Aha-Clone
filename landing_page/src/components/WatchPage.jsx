@@ -11,12 +11,13 @@ import { useLocation } from "react-router-dom";
 
 
 export const WatchPage =()=>{
+    const URL = process.env.REACT_APP_ABHI_BUS
     const [shows,setShows] = useState(false);
     const [castCheck,setcastcheck] = useState(true) 
     const location = useLocation();
     const  id= location.state.id 
     const data_getting =async ()=>{
-       console.log(id)
+       console.log(id,location.state)
      
         try{
            
@@ -37,6 +38,7 @@ export const WatchPage =()=>{
     useEffect(()=>{
 
         data_getting();
+        console.log(id)
     },[id])
    
     return (
